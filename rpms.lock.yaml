@@ -636,31 +636,31 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:45342cfae9731c43f2ea6e264561f47e8ba9e97eb9346f6294cb7e9d35f8adff
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 1400822
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:c159bc13e486651c84d8bdb63ca41d50d1dac19473cf0a082f97b52c92315ce2
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 42078422
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:abd25331754f3ff7ca7a0a01fe9ea37307043c1683d882ef788b79492a8fea21
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 1333650
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:a030122fbc1f76f9feb9fcc05eedbcc03282162d2bbcf31ee908acb9ebccb770
@@ -759,6 +759,13 @@ arches:
     size: 12475644
     sourcerpm: kernel-4.18.0-553.97.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/k/kernel-headers-4.18.0-553.97.1.el8_10.x86_64.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.100.1.el8_10
+    checksum: sha256:ab4da63ad45b49d7e623dc6e778e632fed82ae2fb4580784e56099c3eba8d10a
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 12477472
+    sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.x86_64.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:240b40a71d01005c0c8f780e5589e3999e3d6aa34e2a5e4eaf6f845fd21c7b5b
@@ -864,6 +871,13 @@ arches:
     size: 225348
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libblkid-2.32.1-47.el8_10.x86_64.rpm
+  - name: libblkid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:1ea002cffcfbccaa258fffebb05bee62ec92b6ca6c3204b2eece0d3142122912
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 225512
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libblkid-2.32.1-48.el8_10.x86_64.rpm
   - name: libcap
     evr: 0:2.48-6.el8_9
     checksum: sha256:53d1d3b3387e8fea15d204b277a6b47e07f8d53bc5e48de84db5242ae3391569
@@ -948,6 +962,13 @@ arches:
     size: 259176
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libfdisk-2.32.1-47.el8_10.x86_64.rpm
+  - name: libfdisk
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:59733655dc4a424ab2314895e5c2f7e274180bb092b65167cbf23e5634662a0a
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 259376
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libfdisk-2.32.1-48.el8_10.x86_64.rpm
   - name: libffi
     evr: 0:3.1-24.el8
     checksum: sha256:e90e92c3364fa407cbdbb30aaf3d25b1542ee33b4269ca4953f03c74fc614d68
@@ -1032,6 +1053,13 @@ arches:
     size: 241732
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libmount-2.32.1-47.el8_10.x86_64.rpm
+  - name: libmount
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:41bf9c5ca51eee9e986e5abf81d10fa3e5abe93b0a11d1cd9e0ca4f59f6d7322
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 241976
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libmount-2.32.1-48.el8_10.x86_64.rpm
   - name: libmpc
     evr: 0:1.1.0-9.1.el8
     checksum: sha256:230146e73dbaa1a259c2d8f1fbb10026c1726ebf2f14ef7e7e7957eb27b97ae9
@@ -1207,6 +1235,13 @@ arches:
     size: 183072
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libsmartcols-2.32.1-47.el8_10.x86_64.rpm
+  - name: libsmartcols
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:c33ea3acbc4eaeb7b5b9d72e683769665931e8839d13e9ccb0da4dcfaa1a3e16
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 183356
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libsmartcols-2.32.1-48.el8_10.x86_64.rpm
   - name: libsolv
     evr: 0:0.7.20-6.el8
     checksum: sha256:2d848cc246472976bb95c9615169ef9a10738e77f6f1e4eb16a8222577a68401
@@ -1305,6 +1340,13 @@ arches:
     size: 100768
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libuuid-2.32.1-47.el8_10.x86_64.rpm
+  - name: libuuid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:111e2fa9fc01063230326f03b6fc810ad1f01353b8102ab470b828102a535c0c
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 100956
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libuuid-2.32.1-48.el8_10.x86_64.rpm
   - name: libuv
     evr: 1:1.41.1-2.el8_10
     checksum: sha256:b94bcac9a187165aca7cff0d76b1a23ddce8948c9826f8b04de6ccf2e80974d5
@@ -2383,6 +2425,13 @@ arches:
     size: 89788
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/platform-python-3.6.8-71.el8_10.x86_64.rpm
+  - name: platform-python
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:01e3c8ed4a6879438fd11806643824c65883cfd90f9562ef10f82d31ee57bfcf
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 90076
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/platform-python-3.6.8-73.el8_10.x86_64.rpm
   - name: platform-python-pip
     evr: 0:9.0.3-24.el8
     checksum: sha256:a9104ca3388b74f665c2648cde81043cc7748bf1ca5a7f2a4148b86013206fc8
@@ -2565,6 +2614,13 @@ arches:
     size: 8250824
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-libs-3.6.8-71.el8_10.x86_64.rpm
+  - name: python3-libs
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:6e343ede74cd599cc8bc8674260e4c7b4b3d1686256522c8c154a771ec0c5314
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 8252760
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-libs-3.6.8-73.el8_10.x86_64.rpm
   - name: python3-libselinux
     evr: 0:2.9-10.el8_10
     checksum: sha256:1c86411dae60e3d06aebcc15d4cdbd34e5e0d459c9c8bd15a9d3460fb3657a3b
@@ -2684,6 +2740,13 @@ arches:
     size: 181588
     sourcerpm: python-urllib3-1.24.2-8.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-urllib3-1.24.2-8.el8_10.noarch.rpm
+  - name: python3-urllib3
+    evr: 0:1.24.2-9.el8_10
+    checksum: sha256:20378ad315cef90ceb585dbd5877d5e5c509f0549db0097cf76667501112725f
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 184352
+    sourcerpm: python-urllib3-1.24.2-9.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-urllib3-1.24.2-9.el8_10.noarch.rpm
   - name: python36
     evr: 0:3.6.8-39.module+el8.10.0+20784+edafcd43
     checksum: sha256:ae70c3563e01ae72274faa79215cd6b8d1aecec126a7ee598277998f64c4c804
@@ -2922,6 +2985,13 @@ arches:
     size: 2596592
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/u/util-linux-2.32.1-47.el8_10.x86_64.rpm
+  - name: util-linux
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:16f51c38ab76c0a1bfb1c9da94d48946a48d94367096ef855343db11574f5aca
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 2597936
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.x86_64.rpm
   - name: vim-filesystem
     evr: 2:8.0.1763-21.el8_10
     checksum: sha256:1934ffde66fbe4bbae4b1e2449b7e4b91aa32bf4bc730c2cea68692b2d22cfb3
@@ -3642,31 +3712,31 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:3b809fa1e5b1557ee560b68eef80059f8a13883f6e8a871abddbd7a2e06c02ff
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 1400798
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:53cca58c1ba20f2728d42be6f1ee8e6244cbc67f060e51f995e22f251513360d
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 38090762
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:60dfdd8cd3e4cdb30dd55cc8e8c5b4d87ed2e05431e9b1ae250cb7002c1b3447
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 696122
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:00a4584005dba061eddc1560e34763cc3428890a54f49399cd66abcc19969f87
@@ -3765,6 +3835,13 @@ arches:
     size: 12463160
     sourcerpm: kernel-4.18.0-553.97.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/k/kernel-headers-4.18.0-553.97.1.el8_10.ppc64le.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.100.1.el8_10
+    checksum: sha256:6da02fc959bcdad0b5d0d984da8fbd9e3c8c8ec12f9f2019328abf86616deaaf
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 12464980
+    sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.ppc64le.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:d978361df9959f44c2f95c921441b55182bfd98cd8445d4d5584030b236e4f14
@@ -3870,6 +3947,13 @@ arches:
     size: 247084
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libblkid-2.32.1-47.el8_10.ppc64le.rpm
+  - name: libblkid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:b147c1a3933ee6249a3ec6bd8b531532bc13cdf7c62edef811e8b933f36cc227
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 247288
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libblkid-2.32.1-48.el8_10.ppc64le.rpm
   - name: libcap
     evr: 0:2.48-6.el8_9
     checksum: sha256:81cf8f60099fd3e16caa0e478781ace2c3e590d82eadfd74ef934c0803f9ca4b
@@ -3954,6 +4038,13 @@ arches:
     size: 275884
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libfdisk-2.32.1-47.el8_10.ppc64le.rpm
+  - name: libfdisk
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:4403752475cb3641193b4edb130a98436bb184eaa46820645baefd61c4bc5c47
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 276132
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libfdisk-2.32.1-48.el8_10.ppc64le.rpm
   - name: libffi
     evr: 0:3.1-24.el8
     checksum: sha256:16f7a238b83242cfc17becf660191b3c82ce17606cb0ad81fd7c9ac19bba84d1
@@ -4038,6 +4129,13 @@ arches:
     size: 265396
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libmount-2.32.1-47.el8_10.ppc64le.rpm
+  - name: libmount
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:a4e0cf5c1b0a92a399f88a2ae484b8e3bd14163d93b942e5a2a642fe0044c99f
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 265624
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libmount-2.32.1-48.el8_10.ppc64le.rpm
   - name: libmpc
     evr: 0:1.1.0-9.1.el8
     checksum: sha256:915151d8640cb5d7029d53e6a3bf3452c59c1ad2386932f5319f8439283887e3
@@ -4220,6 +4318,13 @@ arches:
     size: 195556
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libsmartcols-2.32.1-47.el8_10.ppc64le.rpm
+  - name: libsmartcols
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:8b907b6793e7a1451e8fe3dab0a68447de80f7dc3bd16975e857910ae46676f5
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 195728
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libsmartcols-2.32.1-48.el8_10.ppc64le.rpm
   - name: libsolv
     evr: 0:0.7.20-6.el8
     checksum: sha256:e410cda7f1c92c175d237e3a00282e8f098301b8cd2f95c0558975944f04f339
@@ -4318,6 +4423,13 @@ arches:
     size: 102548
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libuuid-2.32.1-47.el8_10.ppc64le.rpm
+  - name: libuuid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:215aed0a7da0ff753c3b5a7b0f828744b0dbff2ed944f9ce46e4a4368d7c9d3b
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 102736
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libuuid-2.32.1-48.el8_10.ppc64le.rpm
   - name: libuv
     evr: 1:1.41.1-2.el8_10
     checksum: sha256:39e6eaf3c7da068174e341e7d05774c85fde103fd86825454f58e2c19056b226
@@ -5382,6 +5494,13 @@ arches:
     size: 90356
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/platform-python-3.6.8-71.el8_10.ppc64le.rpm
+  - name: platform-python
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:cb324c2c023ab359b9b2ba1380a90a1bd272f11021fbed5b7504ecf367a0e18e
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 90640
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/platform-python-3.6.8-73.el8_10.ppc64le.rpm
   - name: platform-python-pip
     evr: 0:9.0.3-24.el8
     checksum: sha256:a9104ca3388b74f665c2648cde81043cc7748bf1ca5a7f2a4148b86013206fc8
@@ -5564,6 +5683,13 @@ arches:
     size: 8510436
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-libs-3.6.8-71.el8_10.ppc64le.rpm
+  - name: python3-libs
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:bc91eea3ea4299828514b6e81c0e864f9c53548a194e6e2493771b72452333aa
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 8550808
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-libs-3.6.8-73.el8_10.ppc64le.rpm
   - name: python3-libselinux
     evr: 0:2.9-10.el8_10
     checksum: sha256:abc7b73e6a1a79efa3b424953eaa2055c1dbfc9645d6ca052093f500c24a855f
@@ -5690,6 +5816,13 @@ arches:
     size: 181588
     sourcerpm: python-urllib3-1.24.2-8.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-urllib3-1.24.2-8.el8_10.noarch.rpm
+  - name: python3-urllib3
+    evr: 0:1.24.2-9.el8_10
+    checksum: sha256:20378ad315cef90ceb585dbd5877d5e5c509f0549db0097cf76667501112725f
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 184352
+    sourcerpm: python-urllib3-1.24.2-9.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-urllib3-1.24.2-9.el8_10.noarch.rpm
   - name: python36
     evr: 0:3.6.8-39.module+el8.10.0+20784+edafcd43
     checksum: sha256:c3ddb68192f785c5991134fc2d305e1cbf5c158f74902d279da5ef10fefe7c01
@@ -5928,6 +6061,13 @@ arches:
     size: 2700484
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/u/util-linux-2.32.1-47.el8_10.ppc64le.rpm
+  - name: util-linux
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:53a056e9e249281bef1227be4150f5d92d6fcf7efa5b347ed200d7b1d995e823
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 2701164
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.ppc64le.rpm
   - name: vim-filesystem
     evr: 2:8.0.1763-21.el8_10
     checksum: sha256:1934ffde66fbe4bbae4b1e2449b7e4b91aa32bf4bc730c2cea68692b2d22cfb3
@@ -6648,31 +6788,31 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:7a97cca01c0c5910e9942a94af5304f165c4f90ffce313eca8615c3b95562032
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 1400794
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:4a8c83650da4e446e22b6eede58db2e5d54b391c6e3111b9e7ddda0eb3c9f75b
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 39650470
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:58fb3e29877e3db04551d35a4da8f0f2eed189722ce2cb8fd23d7b5ddd94ed6d
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 654026
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:ab12756aca505eb2fac0df10649af88e24cb35cb1254406733295c904e2b0841
@@ -6771,6 +6911,13 @@ arches:
     size: 12470560
     sourcerpm: kernel-4.18.0-553.97.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/k/kernel-headers-4.18.0-553.97.1.el8_10.s390x.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.100.1.el8_10
+    checksum: sha256:39c187bba470dfef0f6a62e46b50e3782b1d72260ceb63144b84adae5f3a0fbf
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 12472764
+    sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.s390x.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:73aa6f64cd535ccaeb86e1e4bd06e40ced364d217f36791ae1737ef12d4e9815
@@ -6876,6 +7023,13 @@ arches:
     size: 217464
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libblkid-2.32.1-47.el8_10.s390x.rpm
+  - name: libblkid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:8d5c68fd87e697e0e309212426e4addf8902433cbc6286a85f195a766f711dc4
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 217612
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libblkid-2.32.1-48.el8_10.s390x.rpm
   - name: libcap
     evr: 0:2.48-6.el8_9
     checksum: sha256:5035b6be992b0bda327a201671e64fcb86a306a9a923baf11db91084b1e2091b
@@ -6960,6 +7114,13 @@ arches:
     size: 249252
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libfdisk-2.32.1-47.el8_10.s390x.rpm
+  - name: libfdisk
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:e7afee088419dacd15b7213670771daa3fb2943ce7e43f188f18c7cdad17a6b0
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 249432
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libfdisk-2.32.1-48.el8_10.s390x.rpm
   - name: libffi
     evr: 0:3.1-24.el8
     checksum: sha256:8e61cdb9a975ff05ac692615f47c516b8d1ba79d88f4930a0d6f2b1ae57e4bca
@@ -7044,6 +7205,13 @@ arches:
     size: 233224
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libmount-2.32.1-47.el8_10.s390x.rpm
+  - name: libmount
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:f9831477b70439ad68c5dd863291dbbc6c534067735d1cc472f375c288ab7f50
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 233312
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libmount-2.32.1-48.el8_10.s390x.rpm
   - name: libmpc
     evr: 0:1.1.0-9.1.el8
     checksum: sha256:db108c5c7a0267dd6d4a7a8ba33ea154351b0525e94f354d0790fc5bfe497cd9
@@ -7205,6 +7373,13 @@ arches:
     size: 178524
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libsmartcols-2.32.1-47.el8_10.s390x.rpm
+  - name: libsmartcols
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:05d1310fa27caa5dd4be91f9384ca68cfa4505fcc859408b628fbfe0bc8f9b6d
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 178708
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libsmartcols-2.32.1-48.el8_10.s390x.rpm
   - name: libsolv
     evr: 0:0.7.20-6.el8
     checksum: sha256:3bdc4950e00d784471c38c18428a1a5ae7879ab5f6c9ae9281fd73895d0fe71c
@@ -7303,6 +7478,13 @@ arches:
     size: 100760
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libuuid-2.32.1-47.el8_10.s390x.rpm
+  - name: libuuid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:7828876cc5878259daf38047c037cf7edd8835f7a571ad570d52bee27fef7fc8
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 100932
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libuuid-2.32.1-48.el8_10.s390x.rpm
   - name: libuv
     evr: 1:1.41.1-2.el8_10
     checksum: sha256:c3d6bf3436b4f0d534ec87d8c7af4ba9048810f9c3bde20599cd1cfb59571fe3
@@ -8353,6 +8535,13 @@ arches:
     size: 89660
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/platform-python-3.6.8-71.el8_10.s390x.rpm
+  - name: platform-python
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:12485aadf13f1673d52be6627004d1c5f1d1d285685847c4c3e033b9bb5433de
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 89940
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/platform-python-3.6.8-73.el8_10.s390x.rpm
   - name: platform-python-pip
     evr: 0:9.0.3-24.el8
     checksum: sha256:a9104ca3388b74f665c2648cde81043cc7748bf1ca5a7f2a4148b86013206fc8
@@ -8535,6 +8724,13 @@ arches:
     size: 8057676
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-libs-3.6.8-71.el8_10.s390x.rpm
+  - name: python3-libs
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:042e19430d730b7f8cca741667f613413413c32f19b4cfe34e3b6c2478ab4d1c
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 8057576
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-libs-3.6.8-73.el8_10.s390x.rpm
   - name: python3-libselinux
     evr: 0:2.9-10.el8_10
     checksum: sha256:acb04e552d22d852b0ba430a0433662c34fbb33366096ccc7dc2029e0f1e5fad
@@ -8654,6 +8850,13 @@ arches:
     size: 181588
     sourcerpm: python-urllib3-1.24.2-8.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-urllib3-1.24.2-8.el8_10.noarch.rpm
+  - name: python3-urllib3
+    evr: 0:1.24.2-9.el8_10
+    checksum: sha256:20378ad315cef90ceb585dbd5877d5e5c509f0549db0097cf76667501112725f
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 184352
+    sourcerpm: python-urllib3-1.24.2-9.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-urllib3-1.24.2-9.el8_10.noarch.rpm
   - name: python36
     evr: 0:3.6.8-39.module+el8.10.0+20784+edafcd43
     checksum: sha256:b97db705c43cc4e514924c9b690be64ad4dfbb82d554db8822a6cfd7daa27a1e
@@ -8892,6 +9095,13 @@ arches:
     size: 2497388
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/u/util-linux-2.32.1-47.el8_10.s390x.rpm
+  - name: util-linux
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:fcd7fa1b6fcc7e68831ad1fa49b14cd5f908fc5d47d0e80bb7dcf1ca38c5ea86
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 2498196
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.s390x.rpm
   - name: vim-filesystem
     evr: 2:8.0.1763-21.el8_10
     checksum: sha256:1934ffde66fbe4bbae4b1e2449b7e4b91aa32bf4bc730c2cea68692b2d22cfb3
@@ -9619,31 +9829,31 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:91ad9b1975ddb93100a3f34201a0d41828cbccb5925368d7a1929908f05dfac1
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 1400786
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:04413c19802d610c3800889dea04799df3ee498fee2aca16658c83700818250b
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 37238018
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:04e7f713e9c7d5b097686e6206cfdc0610e710a3ef5e36b7e1c5127a1156a1d3
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 706898
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:0df1fa16d2e1b0cf275860f5d2f907cbfc1073f0f532e2a3dc2ff47a87ee1d3b
@@ -9742,6 +9952,13 @@ arches:
     size: 12443872
     sourcerpm: kernel-4.18.0-553.97.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/k/kernel-headers-4.18.0-553.97.1.el8_10.aarch64.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.100.1.el8_10
+    checksum: sha256:da189bc499b71c28a1f03483bf76d1bf3061b56e37b061e15947bea50403a861
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 12445720
+    sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.aarch64.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:2ba9e12597a8957737eb543ae98752c838f83af3c787eea71170a3330016c6f8
@@ -9847,6 +10064,13 @@ arches:
     size: 218828
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libblkid-2.32.1-47.el8_10.aarch64.rpm
+  - name: libblkid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:02202c15390d7ecf9c48e4bce8b0a81b5eff270ffcfbec998c4546bf9483d293
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 219120
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libblkid-2.32.1-48.el8_10.aarch64.rpm
   - name: libcap
     evr: 0:2.48-6.el8_9
     checksum: sha256:f07e8f86419435b9b22cbbec364a248e560c5c330cf86a8ea8be3fa828c7fd08
@@ -9931,6 +10155,13 @@ arches:
     size: 249284
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libfdisk-2.32.1-47.el8_10.aarch64.rpm
+  - name: libfdisk
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:71b9420a10ef6d32a46068dd0a8f8cd44b3eefabe02bde00346d6cc72cb7d5cc
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 249448
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libfdisk-2.32.1-48.el8_10.aarch64.rpm
   - name: libffi
     evr: 0:3.1-24.el8
     checksum: sha256:b9f188e5863bee05f4f1682dcd6ac0e673ec0db1daf1b6eb20033f26995f87f2
@@ -10015,6 +10246,13 @@ arches:
     size: 234412
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libmount-2.32.1-47.el8_10.aarch64.rpm
+  - name: libmount
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:d94b2c54047114f914301266ca4185dcb2b90e32b3feb7fcb88c8777f992ed4b
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 234604
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libmount-2.32.1-48.el8_10.aarch64.rpm
   - name: libmpc
     evr: 0:1.1.0-9.1.el8
     checksum: sha256:ca03c188890a54d59a2c7fcc68b34f54771c9ebe16a3a63563e1e284d0c4ff3e
@@ -10190,6 +10428,13 @@ arches:
     size: 178592
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libsmartcols-2.32.1-47.el8_10.aarch64.rpm
+  - name: libsmartcols
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:55da9f33dd305e6d6e156b96fde1f0a2b96b184507b80575b832033aaaaece1b
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 178700
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libsmartcols-2.32.1-48.el8_10.aarch64.rpm
   - name: libsolv
     evr: 0:0.7.20-6.el8
     checksum: sha256:81a7030809dd3597b39227fa6656a87787ca120924e04f110e0e20ab77abeeaf
@@ -10288,6 +10533,13 @@ arches:
     size: 100032
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libuuid-2.32.1-47.el8_10.aarch64.rpm
+  - name: libuuid
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:0cd068fb65f72bd3be463f4aed931340bad45ebdb1adf2a0ed1b9a3f3d9b96d5
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 100212
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libuuid-2.32.1-48.el8_10.aarch64.rpm
   - name: libuv
     evr: 1:1.41.1-2.el8_10
     checksum: sha256:401aa5201bc1c6e209fa7039ae2b6ee3318e102bd7f684ad7726b8c4f6010025
@@ -11352,6 +11604,13 @@ arches:
     size: 89844
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/platform-python-3.6.8-71.el8_10.aarch64.rpm
+  - name: platform-python
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:cb401dbc47e47579f66f572f6f0e3a02d4749da0d76e02ebb4ede439f55084b2
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 90128
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/platform-python-3.6.8-73.el8_10.aarch64.rpm
   - name: platform-python-pip
     evr: 0:9.0.3-24.el8
     checksum: sha256:a9104ca3388b74f665c2648cde81043cc7748bf1ca5a7f2a4148b86013206fc8
@@ -11534,6 +11793,13 @@ arches:
     size: 8113884
     sourcerpm: python3-3.6.8-71.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-libs-3.6.8-71.el8_10.aarch64.rpm
+  - name: python3-libs
+    evr: 0:3.6.8-73.el8_10
+    checksum: sha256:846ef7d5e0e250663bf90557b3d6fb813299fe4cf207d53666e9ee5a4669e447
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 8116152
+    sourcerpm: python3-3.6.8-73.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-libs-3.6.8-73.el8_10.aarch64.rpm
   - name: python3-libselinux
     evr: 0:2.9-10.el8_10
     checksum: sha256:540d057c241dff84b123a70bf41a68a26794a18cc5c22eb238cbe7282eac11dd
@@ -11653,6 +11919,13 @@ arches:
     size: 181588
     sourcerpm: python-urllib3-1.24.2-8.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-urllib3-1.24.2-8.el8_10.noarch.rpm
+  - name: python3-urllib3
+    evr: 0:1.24.2-9.el8_10
+    checksum: sha256:20378ad315cef90ceb585dbd5877d5e5c509f0549db0097cf76667501112725f
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 184352
+    sourcerpm: python-urllib3-1.24.2-9.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-urllib3-1.24.2-9.el8_10.noarch.rpm
   - name: python36
     evr: 0:3.6.8-39.module+el8.10.0+20784+edafcd43
     checksum: sha256:b53b3afa5d7c484686915d03c38c18f5700c44ba0e64a38960ed52675a4d38c6
@@ -11891,6 +12164,13 @@ arches:
     size: 2587504
     sourcerpm: util-linux-2.32.1-47.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/u/util-linux-2.32.1-47.el8_10.aarch64.rpm
+  - name: util-linux
+    evr: 0:2.32.1-48.el8_10
+    checksum: sha256:8a737712dfe00ec954e1f959c1b25faaf02700548efd4dfa37539a3dcaa9022e
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 2587976
+    sourcerpm: util-linux-2.32.1-48.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/u/util-linux-2.32.1-48.el8_10.aarch64.rpm
   - name: vim-filesystem
     evr: 2:8.0.1763-21.el8_10
     checksum: sha256:1934ffde66fbe4bbae4b1e2449b7e4b91aa32bf4bc730c2cea68692b2d22cfb3
