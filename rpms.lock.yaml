@@ -1544,6 +1544,13 @@ arches:
     sourcerpm: man-db-2.9.3-7.el9.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/baseos/os/Packages/m/man-db-2.9.3-7.el9.x86_64.rpm
   - name: mingw-binutils-generic
+    evr: 0:2.39-2.el9
+    checksum: sha256:2f66c14054e13f317a93ddb800c56fdc0d6842427bff695e7f69ab8b32af5fa5
+    repoid: codeready-builder-for-rhel-9-x86_64-eus-rpms__9_DOT_4
+    size: 937989
+    sourcerpm: mingw-binutils-2.39-2.el9.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/codeready-builder/os/Packages/m/mingw-binutils-generic-2.39-2.el9.x86_64.rpm
+  - name: mingw-binutils-generic
     evr: 0:2.41-3.el9
     checksum: sha256:94537117d3a470ccccf4537ef081e6a03e5323303203873cd41b18e4c50c56f4
     repoid: rhel-9-for-x86_64-appstream-eus-rpms__9_DOT_4
