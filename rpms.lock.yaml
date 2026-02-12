@@ -759,6 +759,13 @@ arches:
     size: 2194693
     sourcerpm: kernel-5.14.0-427.109.1.el9_4.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-427.109.1.el9_4.x86_64.rpm
+  - name: kernel-headers
+    evr: 0:5.14.0-427.110.1.el9_4
+    checksum: sha256:88964c5ae500e3f309e26ffd85f36b3f36bb30f43d6eb69be68a6b5d3a95ed8d
+    repoid: rhel-9-for-x86_64-appstream-eus-rpms__9_DOT_4
+    size: 2147077
+    sourcerpm: kernel-5.14.0-427.110.1.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/appstream/os/Packages/k/kernel-headers-5.14.0-427.110.1.el9_4.x86_64.rpm
   - name: kernel-srpm-macros
     evr: 0:1.0-13.el9
     checksum: sha256:7e891fa264fb538bf4a26aa94e91ff0c3084bf2613e2061dbb6f4f0c26856777
@@ -1466,13 +1473,6 @@ arches:
     size: 1245006
     sourcerpm: man-db-2.9.3-7.el9.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/baseos/os/Packages/m/man-db-2.9.3-7.el9.x86_64.rpm
-  - name: mingw-binutils-generic
-    evr: 0:2.39-2.el9
-    checksum: sha256:2f66c14054e13f317a93ddb800c56fdc0d6842427bff695e7f69ab8b32af5fa5
-    repoid: codeready-builder-for-rhel-9-x86_64-eus-rpms__9_DOT_4
-    size: 937989
-    sourcerpm: mingw-binutils-2.39-2.el9.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/codeready-builder/os/Packages/m/mingw-binutils-generic-2.39-2.el9.x86_64.rpm
   - name: mingw-binutils-generic
     evr: 0:2.41-3.el9
     checksum: sha256:94537117d3a470ccccf4537ef081e6a03e5323303203873cd41b18e4c50c56f4
@@ -3625,6 +3625,13 @@ arches:
     size: 2177893
     sourcerpm: kernel-5.14.0-427.109.1.el9_4.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-427.109.1.el9_4.ppc64le.rpm
+  - name: kernel-headers
+    evr: 0:5.14.0-427.110.1.el9_4
+    checksum: sha256:9b69bfcd79356e7ef916b3e49e4fa3587566d1cc2d7ee5ce1b6be551d599c5ad
+    repoid: rhel-9-for-ppc64le-appstream-eus-rpms__9_DOT_4
+    size: 2130401
+    sourcerpm: kernel-5.14.0-427.110.1.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/ppc64le/appstream/os/Packages/k/kernel-headers-5.14.0-427.110.1.el9_4.ppc64le.rpm
   - name: kernel-srpm-macros
     evr: 0:1.0-13.el9
     checksum: sha256:7e891fa264fb538bf4a26aa94e91ff0c3084bf2613e2061dbb6f4f0c26856777
@@ -6498,6 +6505,13 @@ arches:
     size: 2185933
     sourcerpm: kernel-5.14.0-427.109.1.el9_4.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-427.109.1.el9_4.s390x.rpm
+  - name: kernel-headers
+    evr: 0:5.14.0-427.110.1.el9_4
+    checksum: sha256:f2b0321deb62dc0bae316a18e75716210f1999d48a73103801bd911a0e449679
+    repoid: rhel-9-for-s390x-appstream-eus-rpms__9_DOT_4
+    size: 2138409
+    sourcerpm: kernel-5.14.0-427.110.1.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/s390x/appstream/os/Packages/k/kernel-headers-5.14.0-427.110.1.el9_4.s390x.rpm
   - name: kernel-srpm-macros
     evr: 0:1.0-13.el9
     checksum: sha256:7e891fa264fb538bf4a26aa94e91ff0c3084bf2613e2061dbb6f4f0c26856777
@@ -9336,6 +9350,13 @@ arches:
     size: 2157593
     sourcerpm: kernel-5.14.0-427.109.1.el9_4.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-427.109.1.el9_4.aarch64.rpm
+  - name: kernel-headers
+    evr: 0:5.14.0-427.110.1.el9_4
+    checksum: sha256:6327e32a71dce4e4ce6bfd2366f34b76be6bd449384015cb0c60f526ba67f40f
+    repoid: rhel-9-for-aarch64-appstream-eus-rpms__9_DOT_4
+    size: 2110073
+    sourcerpm: kernel-5.14.0-427.110.1.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/aarch64/appstream/os/Packages/k/kernel-headers-5.14.0-427.110.1.el9_4.aarch64.rpm
   - name: kernel-srpm-macros
     evr: 0:1.0-13.el9
     checksum: sha256:7e891fa264fb538bf4a26aa94e91ff0c3084bf2613e2061dbb6f4f0c26856777
