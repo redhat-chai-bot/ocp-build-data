@@ -1,7 +1,7 @@
-name: logging-6.3
+name: logging-6.5
 csv_namespace: openshift-logging
 product: openshift-logging
-version: 6.3.3
+version: 6.5.0
 
 vars:
   # The go versions used by the various CI builder images.
@@ -13,8 +13,8 @@ vars:
   #               aliases:
   #               - rhel-9-golang-{GO_LATEST}
   #               image: openshift/golang-builder:v1.21.3-202401221732.el9.g00c615b
-  GO_LATEST: "1.23"
-  GO_EXTRA: "1.24=3"  # There is no extra version at this time, so just duplicate latest.
+  GO_LATEST: "1.24"
+  GO_EXTRA: "1.24"  # There is no extra version at this time, so just duplicate latest.
   MAJOR: 4
   MINOR: 17
 
