@@ -66,6 +66,13 @@ arches:
     size: 330860
     sourcerpm: brotli-1.0.6-3.el8.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/b/brotli-1.0.6-3.el8.x86_64.rpm
+  - name: brotli
+    evr: 0:1.0.6-4.el8_10
+    checksum: sha256:b63f101a1601c54f8cc953e6251c1481ff05088bf788c5697e75711a6b5f8716
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 329804
+    sourcerpm: brotli-1.0.6-4.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/b/brotli-1.0.6-4.el8_10.x86_64.rpm
   - name: bzip2-libs
     evr: 0:1.0.6-28.el8_10
     checksum: sha256:dc8a416dd88d361bbf9e324903ebbd75e79fb856fc0db0769e7bab96b3212364
@@ -622,31 +629,59 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:45342cfae9731c43f2ea6e264561f47e8ba9e97eb9346f6294cb7e9d35f8adff
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 1400822
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+  - name: golang
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:011e094b90982717f2fb36fe2843772903840dacfa6d38cc5b338e1fb044f78a
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
+    size: 1400922
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-1.25.7-1.module+el8.10.0+23993+83a15e10.x86_64.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:c159bc13e486651c84d8bdb63ca41d50d1dac19473cf0a082f97b52c92315ce2
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 42078422
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+  - name: golang-bin
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6b7117d1c016938f2ca865ba42d83a02d2c682ee520d3370c8fec9bbf3884d00
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
+    size: 42078974
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-bin-1.25.7-1.module+el8.10.0+23993+83a15e10.x86_64.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:abd25331754f3ff7ca7a0a01fe9ea37307043c1683d882ef788b79492a8fea21
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 1333650
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.x86_64.rpm
+  - name: golang-race
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:693777a5cbf2550560f955e206e796383df33af6f32da83152821ee37b153bad
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
+    size: 1333750
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-race-1.25.7-1.module+el8.10.0+23993+83a15e10.x86_64.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-x86_64-rpms
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/x86_64/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+  - name: golang-src
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6b98b80c0e3f2e80fa88e7eb69cf78d75de5a63ca408441f2535d4c887d69b04
+    repoid: rhel-8-for-x86_64-appstream-rpms__8
+    size: 12125474
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/appstream/os/Packages/g/golang-src-1.25.7-1.module+el8.10.0+23993+83a15e10.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:a030122fbc1f76f9feb9fcc05eedbcc03282162d2bbcf31ee908acb9ebccb770
@@ -745,6 +780,13 @@ arches:
     size: 12477472
     sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.x86_64.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.105.1.el8_10
+    checksum: sha256:4280fef3bd5055875ad4136eeda3c223b53282b04971a3596653e385684cb998
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 12482196
+    sourcerpm: kernel-4.18.0-553.105.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/k/kernel-headers-4.18.0-553.105.1.el8_10.x86_64.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:240b40a71d01005c0c8f780e5589e3999e3d6aa34e2a5e4eaf6f845fd21c7b5b
@@ -1144,6 +1186,13 @@ arches:
     size: 170016
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-2.9-10.el8_10.x86_64.rpm
+  - name: libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:25684acd2c63eefb918c076f2fe1f12597edbc620aacd63987d4211dc1c788fa
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 169076
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-2.9-11.el8_10.x86_64.rpm
   - name: libselinux-devel
     evr: 0:2.9-10.el8_10
     checksum: sha256:d5f1c4dfc6d92586a14f0969d7140b64c96114eea6eee5a3e32a6caa8b4505e1
@@ -1151,6 +1200,13 @@ arches:
     size: 205304
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-devel-2.9-10.el8_10.x86_64.rpm
+  - name: libselinux-devel
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:a5c0091173dc305cd3bd851b7998567e4cb2c80538644d22e74e5b5e9acda879
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 204284
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-devel-2.9-11.el8_10.x86_64.rpm
   - name: libselinux-utils
     evr: 0:2.9-10.el8_10
     checksum: sha256:e7e832f301b1f7e0e15ef90113ac878935d2a10b6322b378bcf74eb125efb4a7
@@ -1158,6 +1214,13 @@ arches:
     size: 248956
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-utils-2.9-10.el8_10.x86_64.rpm
+  - name: libselinux-utils
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:4069118e0a0e715365f813b3cf0c603e6a92dd989f0e8c9518e5036493d4526b
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 248140
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/l/libselinux-utils-2.9-11.el8_10.x86_64.rpm
   - name: libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:70ba287f1cc36b1be6c197a3a754fbc1c37e6e6b6e1798c69b96f9174654c62d
@@ -2313,6 +2376,13 @@ arches:
     size: 290460
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-libselinux-2.9-10.el8_10.x86_64.rpm
+  - name: python3-libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:e804b7696d9bf82b2d8e49eca667fa0ac0c3eee76f42b5d7d564ea75f24365ed
+    repoid: rhel-8-for-x86_64-baseos-rpms__8
+    size: 289412
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/x86_64/baseos/os/Packages/p/python3-libselinux-2.9-11.el8_10.x86_64.rpm
   - name: python3-libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:2d804e308ce47e7dc931bba65579a7b715ac7f935f0f401893ae14224ab09a36
@@ -2820,6 +2890,13 @@ arches:
     size: 336612
     sourcerpm: brotli-1.0.6-3.el8.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/b/brotli-1.0.6-3.el8.ppc64le.rpm
+  - name: brotli
+    evr: 0:1.0.6-4.el8_10
+    checksum: sha256:7791ae466716f187d4e3fbca1ca890552a4161968d58f12bf407d76ed48339c5
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 335632
+    sourcerpm: brotli-1.0.6-4.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/b/brotli-1.0.6-4.el8_10.ppc64le.rpm
   - name: bzip2-libs
     evr: 0:1.0.6-28.el8_10
     checksum: sha256:7dfc762abd1aee8de47d1501ebb45e46f30acae52afa50dc6946f926f890fa94
@@ -3369,31 +3446,59 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:3b809fa1e5b1557ee560b68eef80059f8a13883f6e8a871abddbd7a2e06c02ff
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 1400798
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+  - name: golang
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:0a2f40abda97064ecd045590e0d673f280467c77b24b433fbbd979ef12ff29c4
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
+    size: 1400830
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-1.25.7-1.module+el8.10.0+23993+83a15e10.ppc64le.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:53cca58c1ba20f2728d42be6f1ee8e6244cbc67f060e51f995e22f251513360d
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 38090762
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+  - name: golang-bin
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:dc6faafe9d94e7d5023358154e79f161a48ee340f38ded8e87e1dd06b6dfb149
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
+    size: 38090434
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-bin-1.25.7-1.module+el8.10.0+23993+83a15e10.ppc64le.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:60dfdd8cd3e4cdb30dd55cc8e8c5b4d87ed2e05431e9b1ae250cb7002c1b3447
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 696122
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.ppc64le.rpm
+  - name: golang-race
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6133877fa15610b6fd532deb61485629623265ca32fe0018e11035fb6ce74e00
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
+    size: 696226
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-race-1.25.7-1.module+el8.10.0+23993+83a15e10.ppc64le.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-ppc64le-rpms
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/ppc64le/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+  - name: golang-src
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6b98b80c0e3f2e80fa88e7eb69cf78d75de5a63ca408441f2535d4c887d69b04
+    repoid: rhel-8-for-ppc64le-appstream-rpms__8
+    size: 12125474
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/appstream/os/Packages/g/golang-src-1.25.7-1.module+el8.10.0+23993+83a15e10.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:00a4584005dba061eddc1560e34763cc3428890a54f49399cd66abcc19969f87
@@ -3492,6 +3597,13 @@ arches:
     size: 12464980
     sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.ppc64le.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.105.1.el8_10
+    checksum: sha256:2c34c476210ae6e2531e2fca7c02c58a1eaa2ae149a58887befe900e9233e49f
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 12469760
+    sourcerpm: kernel-4.18.0-553.105.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/k/kernel-headers-4.18.0-553.105.1.el8_10.ppc64le.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:d978361df9959f44c2f95c921441b55182bfd98cd8445d4d5584030b236e4f14
@@ -3898,6 +4010,13 @@ arches:
     size: 182304
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-2.9-10.el8_10.ppc64le.rpm
+  - name: libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:cf149e59cd091aeba1b59078ed981d53e29eda9a0a1aae362609b1450aaf2e27
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 181376
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-2.9-11.el8_10.ppc64le.rpm
   - name: libselinux-devel
     evr: 0:2.9-10.el8_10
     checksum: sha256:8a4e85838aed459fc2d15d1c2157cd2d2cefb8ffe631d0a225d81e5e2ac17045
@@ -3905,6 +4024,13 @@ arches:
     size: 205292
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-devel-2.9-10.el8_10.ppc64le.rpm
+  - name: libselinux-devel
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:2df3101452db8740347d9446afaa4adc96b8d842ee81a32393671b62ea974825
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 204276
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-devel-2.9-11.el8_10.ppc64le.rpm
   - name: libselinux-utils
     evr: 0:2.9-10.el8_10
     checksum: sha256:5f1ac57fe584d370206ca9a018163e6b88381162b4cada4182cdedb6e9a7caf0
@@ -3912,6 +4038,13 @@ arches:
     size: 255160
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-utils-2.9-10.el8_10.ppc64le.rpm
+  - name: libselinux-utils
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:2bac52aee0d24943a895ad3bd21ab9025aa9ebbc242c7b98ad9c77092148326e
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 254216
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/l/libselinux-utils-2.9-11.el8_10.ppc64le.rpm
   - name: libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:b2aa7387dad70bd25ea50a627240e242f9bc49960773213e1b9f7927e93f5dab
@@ -5053,6 +5186,13 @@ arches:
     size: 299780
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-libselinux-2.9-10.el8_10.ppc64le.rpm
+  - name: python3-libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:e502579e3a37a1ba9818e7fa811e010f306594cac887742c7a9ffee80f28190d
+    repoid: rhel-8-for-ppc64le-baseos-rpms__8
+    size: 298864
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/ppc64le/baseos/os/Packages/p/python3-libselinux-2.9-11.el8_10.ppc64le.rpm
   - name: python3-libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:f432bf83059b9cb66dd33ef7e09a617a6bdad5b1202eb6a07f32545e88221a0d
@@ -5560,6 +5700,13 @@ arches:
     size: 323352
     sourcerpm: brotli-1.0.6-3.el8.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/b/brotli-1.0.6-3.el8.s390x.rpm
+  - name: brotli
+    evr: 0:1.0.6-4.el8_10
+    checksum: sha256:b81abd727d7147f63b380b23a945c8fbc7b138b4a297ff8b2ffc66a5b763477e
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 322524
+    sourcerpm: brotli-1.0.6-4.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/b/brotli-1.0.6-4.el8_10.s390x.rpm
   - name: bzip2-libs
     evr: 0:1.0.6-28.el8_10
     checksum: sha256:493c670f7ced70cbaca38bc9a55d591fdcdfc6f7c32f51b000d5545b98b4f891
@@ -6109,31 +6256,59 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:7a97cca01c0c5910e9942a94af5304f165c4f90ffce313eca8615c3b95562032
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 1400794
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+  - name: golang
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:99f91d5ad38fd40bb207d3fcc7fb794091eaf42597a5c9cec504b705121178d5
+    repoid: rhel-8-for-s390x-appstream-rpms__8
+    size: 1400818
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-1.25.7-1.module+el8.10.0+23993+83a15e10.s390x.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:4a8c83650da4e446e22b6eede58db2e5d54b391c6e3111b9e7ddda0eb3c9f75b
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 39650470
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+  - name: golang-bin
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:e3c700bca135366631d7d6241782183c92eae6a158c1f974b10e1ae9f06463d4
+    repoid: rhel-8-for-s390x-appstream-rpms__8
+    size: 39651186
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-bin-1.25.7-1.module+el8.10.0+23993+83a15e10.s390x.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:58fb3e29877e3db04551d35a4da8f0f2eed189722ce2cb8fd23d7b5ddd94ed6d
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 654026
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.s390x.rpm
+  - name: golang-race
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:1ab180f48e72aefb770b3a6b3185ea0b70d2deb4e3731075d8e61c21f26e572e
+    repoid: rhel-8-for-s390x-appstream-rpms__8
+    size: 654134
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-race-1.25.7-1.module+el8.10.0+23993+83a15e10.s390x.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-s390x-rpms
+    repoid: rhel-8-for-s390x-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/s390x/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+  - name: golang-src
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6b98b80c0e3f2e80fa88e7eb69cf78d75de5a63ca408441f2535d4c887d69b04
+    repoid: rhel-8-for-s390x-appstream-rpms__8
+    size: 12125474
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/appstream/os/Packages/g/golang-src-1.25.7-1.module+el8.10.0+23993+83a15e10.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:ab12756aca505eb2fac0df10649af88e24cb35cb1254406733295c904e2b0841
@@ -6232,6 +6407,13 @@ arches:
     size: 12472764
     sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.s390x.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.105.1.el8_10
+    checksum: sha256:6768d4ef2d45e8effd68e5ed249356a4f945356c5cb8979ff6324d1a6c265b3e
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 12478060
+    sourcerpm: kernel-4.18.0-553.105.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/k/kernel-headers-4.18.0-553.105.1.el8_10.s390x.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:73aa6f64cd535ccaeb86e1e4bd06e40ced364d217f36791ae1737ef12d4e9815
@@ -6617,6 +6799,13 @@ arches:
     size: 167768
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-2.9-10.el8_10.s390x.rpm
+  - name: libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:8a0c1dfb3ee0982f3697eaa4d38b9a3e0196a89e530df428e1951db1aa7f7061
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 166832
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-2.9-11.el8_10.s390x.rpm
   - name: libselinux-devel
     evr: 0:2.9-10.el8_10
     checksum: sha256:d5c04d2a57ea3c1e823ebf4e367675fe1784c387cc92cecf8ac6a452987abd00
@@ -6624,6 +6813,13 @@ arches:
     size: 205296
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-devel-2.9-10.el8_10.s390x.rpm
+  - name: libselinux-devel
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:630d9fca7a34af4eec567a237f1bf43ae07912b8dfbb9b2386935a486ee40b15
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 204280
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-devel-2.9-11.el8_10.s390x.rpm
   - name: libselinux-utils
     evr: 0:2.9-10.el8_10
     checksum: sha256:9044deae5703ee638e39a4687e03c32a9aa1ac20d3659a3de06b178fa415f236
@@ -6631,6 +6827,13 @@ arches:
     size: 246812
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-utils-2.9-10.el8_10.s390x.rpm
+  - name: libselinux-utils
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:97be3bbbd11df2a24a579ab9b08186eb8ecd32005977df665546bb81e78dc78b
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 245796
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/l/libselinux-utils-2.9-11.el8_10.s390x.rpm
   - name: libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:d1641c4dbad9359d04bcc0f6d06ce3d8335073c867d8de376d8120e9549ab67c
@@ -7758,6 +7961,13 @@ arches:
     size: 278388
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-libselinux-2.9-10.el8_10.s390x.rpm
+  - name: python3-libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:89d4a7dab26cac158a3660aa2a19b9254f377b194cf3a2f8d000c4688941c662
+    repoid: rhel-8-for-s390x-baseos-rpms__8
+    size: 277388
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/s390x/baseos/os/Packages/p/python3-libselinux-2.9-11.el8_10.s390x.rpm
   - name: python3-libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:4d3d8b6183e035cfe3011d7bc1ac45b10f785a734fe0ba36ae3b531785a9548f
@@ -8265,6 +8475,13 @@ arches:
     size: 321484
     sourcerpm: brotli-1.0.6-3.el8.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/b/brotli-1.0.6-3.el8.aarch64.rpm
+  - name: brotli
+    evr: 0:1.0.6-4.el8_10
+    checksum: sha256:0a1b984adc1bba4069243c00cc38530ab9eb74ac4efee473bc5301ea6e5e3b36
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 320588
+    sourcerpm: brotli-1.0.6-4.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/b/brotli-1.0.6-4.el8_10.aarch64.rpm
   - name: bzip2-libs
     evr: 0:1.0.6-28.el8_10
     checksum: sha256:ebbecc508e327ebad11b8847ff832a482bec8a061d082a76654cc16ca9dd6aba
@@ -8821,31 +9038,59 @@ arches:
   - name: golang
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:91ad9b1975ddb93100a3f34201a0d41828cbccb5925368d7a1929908f05dfac1
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 1400786
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+  - name: golang
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:13e2af82fb9130ff1ea13761141306782b33bbf6fce5b94aa353c0d4d6c30c27
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
+    size: 1400890
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-1.25.7-1.module+el8.10.0+23993+83a15e10.aarch64.rpm
   - name: golang-bin
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:04413c19802d610c3800889dea04799df3ee498fee2aca16658c83700818250b
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 37238018
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-bin-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+  - name: golang-bin
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:5436d36253ec2ec0a406f52aeb6fe6f6563e2aeafe0f72646dc0aac8e419e8cc
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
+    size: 37238218
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-bin-1.25.7-1.module+el8.10.0+23993+83a15e10.aarch64.rpm
   - name: golang-race
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:04e7f713e9c7d5b097686e6206cfdc0610e710a3ef5e36b7e1c5127a1156a1d3
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 706898
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-race-1.25.5-1.module+el8.10.0+23901+9d60aaf1.aarch64.rpm
+  - name: golang-race
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:56c78867ea44d60eaffde12695a0ae9eeb7194e70e45e118fad3c7001032036c
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
+    size: 706998
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-race-1.25.7-1.module+el8.10.0+23993+83a15e10.aarch64.rpm
   - name: golang-src
     evr: 0:1.25.5-1.module+el8.10.0+23901+9d60aaf1
     checksum: sha256:5ba613d5a2d19a785c97ce822a6448bdce50a0b173f591c3c2f0f37709a321df
-    repoid: rhocp-4.21-for-rhel-8-aarch64-rpms
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
     size: 12125102
     sourcerpm: golang-1.25.5-1.module+el8.10.0+23901+9d60aaf1.src.rpm
-    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8.10/aarch64/appstream/osPackages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-src-1.25.5-1.module+el8.10.0+23901+9d60aaf1.noarch.rpm
+  - name: golang-src
+    evr: 0:1.25.7-1.module+el8.10.0+23993+83a15e10
+    checksum: sha256:6b98b80c0e3f2e80fa88e7eb69cf78d75de5a63ca408441f2535d4c887d69b04
+    repoid: rhel-8-for-aarch64-appstream-rpms__8
+    size: 12125474
+    sourcerpm: golang-1.25.7-1.module+el8.10.0+23993+83a15e10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/appstream/os/Packages/g/golang-src-1.25.7-1.module+el8.10.0+23993+83a15e10.noarch.rpm
   - name: goversioninfo
     evr: 0:0.1-2.el8
     checksum: sha256:0df1fa16d2e1b0cf275860f5d2f907cbfc1073f0f532e2a3dc2ff47a87ee1d3b
@@ -8944,6 +9189,13 @@ arches:
     size: 12445720
     sourcerpm: kernel-4.18.0-553.100.1.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/k/kernel-headers-4.18.0-553.100.1.el8_10.aarch64.rpm
+  - name: kernel-headers
+    evr: 0:4.18.0-553.105.1.el8_10
+    checksum: sha256:9d51a55525c99bb3d1d2ea151a048c6e00c466c96ed87f06433abd9cadaf23de
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 12450524
+    sourcerpm: kernel-4.18.0-553.105.1.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/k/kernel-headers-4.18.0-553.105.1.el8_10.aarch64.rpm
   - name: keyutils-libs
     evr: 0:1.5.10-9.el8
     checksum: sha256:2ba9e12597a8957737eb543ae98752c838f83af3c787eea71170a3330016c6f8
@@ -9343,6 +9595,13 @@ arches:
     size: 166492
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-2.9-10.el8_10.aarch64.rpm
+  - name: libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:e34001b4096c6ac6b70c4ed82927095f367bde77567be9f59ac8751cfda8ad64
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 165608
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-2.9-11.el8_10.aarch64.rpm
   - name: libselinux-devel
     evr: 0:2.9-10.el8_10
     checksum: sha256:5dfb45631aa54672a7ea8a706491bb7fe8da70e8bc95a4a5634d6bc4bf4028f4
@@ -9350,6 +9609,13 @@ arches:
     size: 205296
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-devel-2.9-10.el8_10.aarch64.rpm
+  - name: libselinux-devel
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:ad19eaa9ee3420e411d20f2a3add28fef8d48055cf5a838fb4a9e8138aaa84cd
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 204276
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-devel-2.9-11.el8_10.aarch64.rpm
   - name: libselinux-utils
     evr: 0:2.9-10.el8_10
     checksum: sha256:f622e2cca516ce57d46588ad76c3aa522275d7d5e8ae7f79b31cb50321671d4c
@@ -9357,6 +9623,13 @@ arches:
     size: 247008
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-utils-2.9-10.el8_10.aarch64.rpm
+  - name: libselinux-utils
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:2df7805a7d1ae224e23b0fc5416daa7db159488b0148147697c424d247b59c44
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 246004
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/l/libselinux-utils-2.9-11.el8_10.aarch64.rpm
   - name: libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:e21457c375d2de563a674816108744baa2f0fc48adc0f399e09cc9a7d89797f6
@@ -10498,6 +10771,13 @@ arches:
     size: 278392
     sourcerpm: libselinux-2.9-10.el8_10.src.rpm
     url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-libselinux-2.9-10.el8_10.aarch64.rpm
+  - name: python3-libselinux
+    evr: 0:2.9-11.el8_10
+    checksum: sha256:5901005f386c70a66371765dbc8c90299ae1cd6a6c7ee19b08587a0ec425640a
+    repoid: rhel-8-for-aarch64-baseos-rpms__8
+    size: 277356
+    sourcerpm: libselinux-2.9-11.el8_10.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/dist/rhel8/8/aarch64/baseos/os/Packages/p/python3-libselinux-2.9-11.el8_10.aarch64.rpm
   - name: python3-libsemanage
     evr: 0:2.9-12.el8_10
     checksum: sha256:8b62ca1176d0e3f402aa95448c47e1e6cd08b3fd2372efb3b91c89b110e8390e
