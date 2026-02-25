@@ -14,7 +14,8 @@ vars:
   RHCOS_EL_MAJOR: 9
   RHCOS_EL_MINOR: 2
   GO_LATEST: "1.20"
-  GO_EXTRA: "1.19"
+  GO_EXTRA: "1.21"
+  GO_PREVIOUS: "1.19"
 
 compliance:
   rpm_shim:
