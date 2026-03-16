@@ -1,5 +1,6 @@
 content:
   source:
+    allow_mismatched_siblings: true  # SMB operator tracks release-4.18 while its sibling aws-efs tracks release-{MAJOR}.{MINOR}
     dockerfile: Dockerfile.samba
     git:
       branch:
