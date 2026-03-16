@@ -10,6 +10,7 @@ releases:
         advisories:
           rpm: 163534
           rhcos: 163535
+          microshift: 163587
         release_jira: ART-14728
         shipment:
           advisories:
@@ -53,7 +54,12 @@ releases:
             s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:fa6a70d2bcc044bd88de367a2968ff9a566ea7531d5aaafd77149788a2a71f92
             ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:f01db3ef7bf769537f76f0942cf628073a4b5123cc87599ff45920b796c07dfd
       members:
-        rpms: []
+        rpms:
+          - distgit_key: microshift
+            why: Pin microshift to assembly
+            metadata:
+              is:
+                el9: microshift-4.16.58-202603160404.p0.gb9661ec.assembly.4.16.58.el9
         images: []
   4.16.57:
     assembly:
