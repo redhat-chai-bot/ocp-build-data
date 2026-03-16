@@ -1,5 +1,6 @@
 content:
   source:
+    allow_mismatched_siblings: true  # 4.18 variant intentionally tracks a different branch than its sibling
     dockerfile: Dockerfile.ocp
     git:
       branch:
