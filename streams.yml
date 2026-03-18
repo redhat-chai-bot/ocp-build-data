@@ -83,7 +83,8 @@ rhel9:
   mirror: true
 
 nodejs:
-  image: registry.access.redhat.com/ubi8/nodejs-18:1-86
+  # the most recent release with precise nodejs 14 version we need.
+  image: ubi8/nodejs-14:1-35.1626836507
   upstream_image: registry.ci.openshift.org/ocp/builder:rhel-8-openshift-nodejs-base-{MAJOR}.{MINOR}.art
   mirror: true
 
