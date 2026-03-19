@@ -1,6 +1,7 @@
 content:
   source:
-    dockerfile: tools/iso_builder/Dockerfile
+    path: tools/iso_builder
+    dockerfile: Dockerfile
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
