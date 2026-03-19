@@ -1,5 +1,6 @@
 name: installer-ove-ui-4.20
 product: installer-ove-ui
+version: "4.20"
 
 vars:
   MAJOR: 4
