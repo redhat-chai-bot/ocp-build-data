@@ -1,4 +1,7 @@
 ---
+agent-preinstall-image-builder:
+  image: registry.redhat.io/assisted/agent-preinstall-image-builder-rhel9
+
 ose-cli:
   image: registry.redhat.io/openshift4/ose-cli-rhel9:v4.16.0-202509240123.p2.g4c7883f.assembly.stream.el9
 
