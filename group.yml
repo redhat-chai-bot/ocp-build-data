@@ -13,7 +13,7 @@ arches:
 konflux:
   arches:
   - x86_64
-  network_mode: hermetic
+  network_mode: open
   image_repo: quay.io/redhat-user-workloads/ocp-agent-based-installer-tenant/ove-ui-iso
   additional_build_args:
   - privileged-nested: true
