@@ -20,9 +20,6 @@ from:
 name: openshift/ose-hypershift-rhel8
 owners:
 - hypershift-team@redhat.com
-konflux:
-  cachi2:
-    enabled: false
 delivery:
   delivery_repo_names:
   - openshift4/ose-hypershift-rhel8
