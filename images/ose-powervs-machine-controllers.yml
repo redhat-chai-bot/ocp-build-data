@@ -25,7 +25,4 @@ owners:
 delivery:
   delivery_repo_names:
   - openshift4/ose-powervs-machine-controllers-rhel8
-konflux:
-  cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
 payload_name: powervs-machine-controllers
