@@ -1,10 +1,10 @@
-name: installer-ove-ui-4.20
+name: installer-ove-ui-4.21
 product: installer-ove-ui
-version: "4.20"
+version: "4.21"
 
 vars:
   MAJOR: 4
-  MINOR: 20
+  MINOR: 21
 
 
 arches:
@@ -23,9 +23,9 @@ konflux:
     ephemeral-storage: "150Gi"
   build_args:
   - "RELEASE_FLAG=--release-image-url"
-  - "RELEASE_VALUE=quay.io/openshift-release-dev/ocp-release:4.20.8-x86_64"
-  - "MAJOR_MINOR_VERSION=4.20"
-  - "PATCH_VERSION=8"
+  - "RELEASE_VALUE=quay.io/openshift-release-dev/ocp-release:4.21.5-x86_64"
+  - "MAJOR_MINOR_VERSION=4.21"
+  - "PATCH_VERSION=5"
   - "ARCH=x86_64"
 
 assemblies:
