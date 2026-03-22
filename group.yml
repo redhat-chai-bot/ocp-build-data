@@ -20,7 +20,7 @@ konflux:
   additional_secret: ove-ui-image-pull-secret
   build_step_resources:
     memory: "8Gi"
-    ephemeral-storage: "150Gi"
+  workspace_storage: "100Gi"
   build_args:
   - "RELEASE_FLAG=--release-image-url"
   - "RELEASE_VALUE=quay.io/openshift-release-dev/ocp-release:4.20.8-x86_64"
