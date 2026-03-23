@@ -1,7 +1,8 @@
-name: logging-6.5
+freeze_automation: true
+name: logging-6.6
 csv_namespace: openshift-logging
 product: openshift-logging
-version: 6.5.0
+version: 6.6.0
 
 vars:
   # The go versions used by the various CI builder images.
