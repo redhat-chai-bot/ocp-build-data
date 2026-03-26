@@ -28,9 +28,12 @@ name: openshift/ose-libvirt-machine-controllers
 owners:
 - pkrupa@redhat.com
 konflux:
-  network_mode: open
   cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
+    lockfile:
+      rpms:
+        - libvirt-devel
+      modules:
+        - virt:rhel
 delivery:
   delivery_repo_names:
   - openshift4/ose-libvirt-machine-controllers
