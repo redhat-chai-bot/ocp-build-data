@@ -38,6 +38,8 @@ payload_name: libvirt-machine-controllers
 owners:
 - pkrupa@redhat.com
 konflux:
-  network_mode: open
   cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
+    lockfile:
+      rpms:
+        - libvirt-devel
+        - libvirt-libs-0:9.0.0-10.13.el9_2
