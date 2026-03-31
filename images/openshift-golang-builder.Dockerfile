@@ -48,7 +48,8 @@ RUN dnf update -y && \
         wget \
         which \
         xz \
-        zip && \
+        zip \
+        zstd && \
     dnf install -y "golang-*$VERSION*" && \
     mkdir -p /go/src
 # provide a cross-compiler for windows/mac binaries (amd64 only)
