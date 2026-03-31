@@ -21,7 +21,7 @@ content:
       # https://github.com/openshift/alibaba-cloud-csi-driver/blob/master/build/build-all-amd.sh#L26
       - action: replace
         match: "RUN build/build-all-amd.sh noimage"
-        replacement: "RUN git checkout -b rhaos-{MAJOR}.{MINOR}-rhel9 && build/build-all-amd.sh noimage"
+        replacement: "RUN git checkout -b rhaos-{MAJOR}.{MINOR}-rhel9 && GOPATH=/go build/build-all-amd.sh noimage"
 distgit:
   branch: rhaos-{MAJOR}.{MINOR}-rhel-9
   component: ose-alibaba-cloud-csi-driver-container
@@ -41,7 +41,3 @@ name: openshift/ose-alibaba-cloud-csi-driver-container-rhel9
 payload_name: alibaba-cloud-csi-driver
 owners:
 - aos-storage-staff@redhat.com
-konflux:
-  network_mode: open
-  cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
