@@ -20,7 +20,7 @@ content:
       # https://github.com/openshift/alibaba-cloud-csi-driver/blob/master/build/build-all-amd.sh#L26
       - action: replace
         match: "RUN build/build-all.sh noimage"
-        replacement: "RUN git checkout -b rhaos-{MAJOR}.{MINOR}-rhel8 && build/build-all.sh noimage"
+        replacement: "RUN git checkout -b rhaos-{MAJOR}.{MINOR}-rhel8 && GOPATH=/go build/build-all.sh noimage"
 enabled_repos:
 - rhel-8-baseos-rpms
 - rhel-8-appstream-rpms
@@ -32,10 +32,6 @@ from:
 name: openshift/ose-alibaba-cloud-csi-driver-container-rhel8
 owners:
 - aos-storage-staff@redhat.com
-konflux:
-  network_mode: open
-  cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
 delivery:
   delivery_repo_names:
   - openshift4/ose-alibaba-cloud-csi-driver-container-rhel8
