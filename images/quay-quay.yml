@@ -1,0 +1,25 @@
+content:
+  source:
+    dockerfile: Dockerfile
+    git:
+      branch:
+        target: redhat-3.16
+      url: git@github.com:openshift-priv/quay.git
+      web: https://github.com/quay/quay
+jira:
+  project: PROJQUAY
+  component: Quay
+distgit:
+  component: quay-quay-container
+delivery:
+  delivery_repo_names:
+  - quay/quay-rhel9
+for_payload: false
+enabled_repos:
+- rhel-9-appstream-rpms
+- rhel-9-baseos-rpms
+from:
+  stream: rhel9
+name: quay/quay-rhel9
+owners:
+- quay-devel@redhat.com
