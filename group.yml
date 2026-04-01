@@ -54,6 +54,14 @@ OCP_TARGET_VERSIONS: [
 assemblies:
   enabled: true
 
+mr_approvers:
+  QE:
+    - sshveta
+    - istein
+    - dymurray
+  DOCS:
+    - anarnold
+
 public_upstreams:
 - private: "https://github.com/openshift-priv"
   public:  "https://github.com/migtools"
