@@ -49,6 +49,13 @@ OCP_TARGET_VERSIONS: [
 assemblies:
   enabled: true
 
+mr_approvers:
+  QE:
+    - akarol
+    - prajoshi
+  DOCS:
+    - anarnold
+
 public_upstreams:
 - private: "https://github.com/openshift-priv"
   public:  "https://github.com/openshift"
