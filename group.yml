@@ -33,6 +33,12 @@ arches:
 
 operator_image_ref_mode: manifest-list
 
+mr_approvers:
+  QE:
+    - asdas1
+    - rjohnson
+    - fbladilo
+
 konflux:
   arches:
   - x86_64
