@@ -21,7 +21,4 @@ owners:
 delivery:
   delivery_repo_names:
   - openshift4/ose-cluster-network-operator
-konflux:
-  cachi2:
-    enabled: false  # https://issues.redhat.com/browse/ART-13260
 payload_name: cluster-network-operator
