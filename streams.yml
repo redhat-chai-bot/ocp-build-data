@@ -20,7 +20,7 @@
 rhel-9-golang:
   aliases:
     - rhel-9-golang-{GO_LATEST}
-  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202602241847.p2.g388ceb2.el9
+  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202603181325.p2.g388ceb2.el9
   mirror: true
   transform: rhel-9/golang
   # Leave this upstream information in place even if mirror/transform is disabled. Test Platform read the data.
@@ -33,7 +33,7 @@ rhel-9-golang:
 rhel-8-golang:
   aliases:
     - rhel-8-golang-{GO_LATEST}
-  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202602241847.p2.g3a22db8.el8
+  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202603181325.p2.g3a22db8.el8
   mirror: true
   transform: rhel-8/golang
   # Leave this upstream information in place even if mirror/transform is disabled. Test Platform read the data.
@@ -71,14 +71,14 @@ rhel-8-golang-1.23:
 
 ibm-rhel-9-golang-1.22:
   # Mirror non-embargoed golang builders for IBM
-  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202602241847.p2.g388ceb2.el9
+  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202603181325.p2.g388ceb2.el9
   mirror: true
   mirror_manifest_list: true
   upstream_image: quay.io/openshift-release-dev/golang-builder--ibm-share:rhel-9-golang-1.22-openshift-{MAJOR}.{MINOR}
 
 ibm-rhel-8-golang-1.22:
   # Mirror non-embargoed golang builders for IBM
-  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202602241847.p2.g3a22db8.el8
+  image: quay.io/redhat-user-workloads/ocp-art-tenant/art-images:golang-builder-v1.22.12-202603181325.p2.g3a22db8.el8
   mirror: true
   mirror_manifest_list: true
   upstream_image: quay.io/openshift-release-dev/golang-builder--ibm-share:rhel-8-golang-1.22-openshift-{MAJOR}.{MINOR}
