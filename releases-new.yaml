@@ -1,0 +1,102 @@
+releases:
+  ec.0:
+    assembly:
+      type: preview
+      basis:
+        time: "2026-03-17T03:57:24+00:00"
+        reference_releases:
+          x86_64: 5.0.0-0.nightly-2026-03-17-055227
+      group:
+        advisories: {}
+        release_jira: ART-14755
+        shipment:
+          advisories:
+            - kind: image
+              live_id: 4893
+            - kind: extras
+              live_id: 4894
+            - kind: metadata
+              live_id: 4895
+            - kind: fbc
+          env: stage
+          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/422
+        release_date: 2026-Apr-01
+        upgrades: ""
+      permits:
+        - code: MISMATCHED_NETWORK_MODE
+          component: dpu-intel-ipu-vsp
+        - code: MISMATCHED_NETWORK_MODE
+          component: ironic
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: rhcos
+        - code: CONFLICTING_GROUP_RPM_INSTALLED
+          component: rhcos
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:fe9b41b68fa15547b45123785f14ca88828c8442a9882334b34da13f0b14c360
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:0ccb03c515a313083f25d51dfe33514ad924bf19c4605ff17c5369f9d509f6d5
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b8673024151590ea3f42695b823f23a428bb345a86c7b9c1d18b53c37312e4b6
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:274499229b7b3aaa1ea5a1c06a80dbf8f705ba7b722c1764d53d7c68eba9fd66
+        rhel-coreos-10:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:4a1798a3b92a794a69d56eaf78c1521a1c4d2e52fd05057072780ec19ccabd45
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:04d199e94944c2a097f9c1b883c84ab763f02958f8e6ceecc617b67b64e62c28
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:0f1ccd4b4561c1b763f8dd3f5c838ffba69193228ded5bd4aeea750f86295890
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:8304365115c74d304e3e59e3ca1f26e4631d37278579b29e998c47cdc1db4f20
+        rhel-coreos-10-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:ee90288a9dfc801da76f890438957d38702c09c94ecaaaeef0f56b5cd2eb19a9
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:baa0c2388ac9ef57e3929dca1596b6a3204af971e63282f2d7fe21f6fa29e1ad
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d7b152dba5faaca8c7d1891bcc42ef6df24e64eb98ead5cd82d2236f1f3ae17a
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:cc54de3e8449153bd95b2767c22b27f6c6f325363b0f5ae8757cfdb91e38566b
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:35b261673caa1bc92861d3f85ab549fe5e175246646aaca9baddbccd6281676d
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:c9d5f279ec34a82669156a118235c3226706fbc4a44c479648f2cb1f83ec20a7
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e594a6d62ee24438f6a633e1cdca83c1705c84190a894e27aa02d26d1d6f9883
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:2a9ae47d7790df88dc8ec22cdf7772d0b655ff3e41f8f4914219964aab4f7064
+      members:
+        rpms: []
+        images:
+          - distgit_key: dpu-operator
+            why: Pin build to assembly
+            metadata:
+              is:
+                nvr: dpu-operator-container-v5.0.0-202603190603.p2.g1ab76b5.assembly.ec.0.el9
+  stream:
+    assembly:
+      type: stream
+      permits:
+        - code: OUTDATED_RPMS_IN_STREAM_BUILD
+          component: '*'
+      prerelease_permits:
+        - code: MISMATCHED_NETWORK_MODE
+          component: '*'
+        - code: OUTDATED_RPMS_IN_STREAM_BUILD
+          component: '*'
+        - code: CONFLICTING_GROUP_RPM_INSTALLED
+          component: rhcos
+        - code: CONFLICTING_GROUP_RPM_INSTALLED
+          component: openshift-clients
+        - code: CONFLICTING_GROUP_RPM_INSTALLED
+          component: local-storage-mustgather
+        # RHCOS extensions temporarily use inconsistent RPMs between arches.
+        # ref. https://redhat-internal.slack.com/archives/C01CQA76KMX/p1738863088399379
+        - code: INCONSISTENT_RHCOS_RPMS
+          component: rhcos
+        - code: FAILED_CONSISTENCY_REQUIREMENT
+          component: '*'
+      members:
+        images:
+          - distgit_key: '*'
+            why: Exclude rpm updates that should not cause mass rebuilds
+            metadata:
+              scan_sources:
+                exempt_rpms:
+                  - redhat-release* # documents rhel release notes and concerns
+                  - tzdata
+                  # Temporary to prevent mass rebuilds
+                  # - libgcrypt
+                  # - "openssl*"
+                  # - "*libc*"
