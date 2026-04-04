@@ -64,6 +64,18 @@ releases:
             metadata:
               is:
                 nvr: dpu-operator-container-v5.0.0-202603190603.p2.g1ab76b5.assembly.ec.0.el9
+  ec.1:
+    assembly:
+      type: preview
+      basis:
+        assembly: ec.0
+      group:
+        advisories: {}
+        release_jira: ''
+        upgrades: ""
+      members:
+        rpms: []
+        images: []
   stream:
     assembly:
       type: stream
