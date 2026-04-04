@@ -1,4 +1,129 @@
 releases:
+  ec.5:
+    assembly:
+      type: preview
+      basis:
+        time: "2026-03-19T13:00:13+00:00"
+        reference_releases:
+          x86_64: 4.22.0-0.nightly-2026-03-19-202824
+      group:
+        advisories:
+          rpm: 164955
+          rhcos: 164956
+          microshift: 159142
+        release_jira: ART-14438
+        shipment:
+          advisories:
+            - kind: image
+              live_id: 449
+            - kind: extras
+              live_id: 450
+            - kind: metadata
+              live_id: 451
+            - kind: fbc
+          env: stage
+          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/431
+        release_date: 2026-May-25
+        upgrades: 4.21.6,4.21.7,4.22.0-ec.0,4.22.0-ec.1,4.22.0-ec.2,4.22.0-ec.3
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b813a4d523cf5689cd64a28bbf0483021124cac5e229b68091d198134380afed
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:6e382780cb04dad50e892e8a31b629b5946dfea024e738a12ad79a7d1181fe02
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:9a1da905fee963fcc071709c3d74e1bb984601ee8aa5f1781f23b776397d5bdf
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:3e22c9a06fc1457b66dd96836cb77570f6b4ffe7510f2eab8cdbae54fce747fc
+        rhel-coreos-10:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:494d4d7ddcb9f89a6de0137ce5216645275850a0013416408b3f94728fb71866
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:edd02a4ab10ee337e34ae893fddbb29fa2d7da2d5c64e9721ff3529af2b99d28
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:56edccb8015badbe158c483e46c79469dc40ca8bb232693b0ff5410e8f040a93
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:2ea3446ae8dab00e6b119ac1f9b6b89d6b55b288454c743392dba392ccb0b613
+        rhel-coreos-10-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d08d6a11fa85b4ae06850b43b847b6e3f0b1453f6abe1b990b2ebc093566ea08
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e778f823b032cbcd15e557dd0d6b62dc5ee6f664973ec14ca5d3c0e112acb28f
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:a6ca37d69e19e0420f74a7c4ed1389ffea1024d2803daa6b363be753ab6db0af
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:99f9840aa14ef9ac89b7efaaf6980bdb0612a6dc7465aa8b4b01412fdad93c95
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:a9ebdb1ae3a7e0f96dd1541aa7a3838bdd47098c26cdf2c3fdd7f51b7c4d1ccd
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:140684a3451a6de6c6d116301dfb33edf7d3f6e59e1046839d8f02f53783e5c3
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:88c3a8664fc0fda76bb620f514e50dc3279edad0a6b669ce8d55ff0fa72f41df
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b3441e34318e4fe732130315b5e55777e3c3e71bbe575f85ff0e9fe3e4811c7e
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: cluster-node-tuning-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: dpu-intel-ipu-p4sdk
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: driver-toolkit
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-ansible-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-builder
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-tests
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-api-server
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-node-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-frr
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-machine-config-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-network-tools
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-tools
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: rhcos
+        - code: MISMATCHED_SIBLINGS
+          component: '*'
+      members:
+        rpms:
+          - distgit_key: microshift
+            why: Pin microshift to assembly
+            metadata:
+              is:
+                el9: microshift-4.22.0~ec.4-202603260841.p0.g8882ae3.assembly.ec.4.el9
+        images:
+          - distgit_key: ironic
+            why: Query from assembly basis event failed to replicate referenced nightly content exactly. Pinning to replicate.
+            metadata:
+              is:
+                nvr: ironic-container-v4.22.0-202603130056.p2.g0c07656.assembly.stream.el9
+          - distgit_key: openshift-enterprise-deployer
+            why: Query from assembly basis event failed to replicate referenced nightly content exactly. Pinning to replicate.
+            metadata:
+              is:
+                nvr: openshift-enterprise-deployer-container-v4.22.0-202603130056.p2.gf7a24ec.assembly.stream.el9
+          - distgit_key: ose-installer
+            why: Query from assembly basis event failed to replicate referenced nightly content exactly. Pinning to replicate.
+            metadata:
+              is:
+                nvr: ose-installer-container-v4.22.0-202603182156.p2.gb4f5094.assembly.stream.el9
+          - distgit_key: ose-aws-efs-csi-driver-operator
+            why: Pin build to assembly
+            metadata:
+              is:
+                nvr: ose-aws-efs-csi-driver-operator-container-v4.22.0-202603240711.p2.gab09ffa.assembly.ec.4.el9
+          - distgit_key: local-storage-operator
+            why: Pin build to assembly
+            metadata:
+              is:
+                nvr: local-storage-operator-container-v4.22.0-202603240711.p2.gd6c65c4.assembly.ec.4.el9
+          - distgit_key: openshift-kubernetes-nmstate-operator
+            why: Pin build to assembly
+            metadata:
+              is:
+                nvr: ose-kubernetes-nmstate-operator-container-v4.22.0-202603240711.p2.ga7682c5.assembly.ec.4.el9
+          - distgit_key: microshift-bootc
+            metadata:
+              is:
+                nvr: microshift-bootc-container-v4.22.0-202603310449.p2.g8882ae3.assembly.ec.4.el9
+            why: Pin microshift-bootc image to assembly
   ec.4:
     assembly:
       type: preview
