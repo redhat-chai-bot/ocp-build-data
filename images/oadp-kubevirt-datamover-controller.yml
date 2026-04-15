@@ -11,11 +11,11 @@ content:
       url: git@github.com:openshift-priv/migtools-kubevirt-datamover-controller.git
       web: https://github.com/migtools/kubevirt-datamover-controller
 distgit:
-  component: oadp-kubevirt-datamover-container
+  component: oadp-kubevirt-datamover-controller-container
   branch: rhaos-{MAJOR}.{MINOR}-rhel-9
 delivery:
   delivery_repo_names:
-    - oadp/oadp-kubevirt-datamover-rhel9
+    - oadp/oadp-kubevirt-datamover-controller-rhel9
 for_payload: false
 enabled_repos:
   - rhel-9-appstream-rpms
@@ -24,7 +24,7 @@ from:
   builder:
     - stream: rhel-9-golang
   member: base-rhel9
-name: oadp/oadp-kubevirt-datamover-rhel9
+name: oadp/oadp-kubevirt-datamover-controller-rhel9
 owners:
   - oadp-maintainers@redhat.com
 dependents:
@@ -36,4 +36,4 @@ konflux:
         - tzdata
 jira:
   project: OADP
-  component: oadp-kubevirt-datamover-container
+  component: oadp-kubevirt-datamover-controller-container
