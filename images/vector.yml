@@ -3,7 +3,7 @@ content:
     dockerfile: Dockerfile.art
     git:
       branch:
-        target: v0.47.0-rh
+        target: v0.37.1-rh
       url: git@github.com:openshift-priv/vector.git
       web: https://github.com/ViaQ/vector
     pkg_managers:
@@ -23,8 +23,8 @@ for_payload: false
 dependents:
 - cluster-logging-operator
 enabled_repos:
-- rhel-96-appstream
-- rhel-96-baseos
+- rhel-9-appstream-rpms
+- rhel-9-baseos-rpms
 from:
   builder:
     - member: base-rhel9
@@ -354,7 +354,7 @@ konflux:
       - rust
       - rust-std-static
       - rust-toolset
-      - rust-toolset-1.84.1
+      - rust-toolset-1.75.0
       - scl-utils
       - systemd
       - systemtap-sdt-devel
