@@ -65,6 +65,7 @@ filters:
     - "Console Kubevirt Plugin"
     - "lvms"
     - "Logical Volume Manager Storage"
+    - "descheduler"
   security:
     - "AWS Load Balancer Operator"
     - "Quay"
@@ -92,3 +93,4 @@ filters:
     - "Console Kubevirt Plugin"
     - "lvms"
     - "Logical Volume Manager Storage"
+    - "descheduler"
