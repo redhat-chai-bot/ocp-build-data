@@ -73,6 +73,7 @@ filters:
     - "lvms"
     - "GitOps ZTP"
     - "Logical Volume Manager Storage"
+    - "descheduler"
     - "LCA operator"
   security:
     - "AWS Load Balancer Operator"
@@ -107,4 +108,5 @@ filters:
     - "lvms"
     - "GitOps ZTP"
     - "Logical Volume Manager Storage"
+    - "descheduler"
     - "LCA operator"
