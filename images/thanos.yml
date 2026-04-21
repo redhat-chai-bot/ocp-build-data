@@ -55,6 +55,4 @@ konflux:
     lockfile:
       rpms:
       - openshift-prometheus-promu
-okd:
-  mode:
-    disabled
+
