@@ -77,6 +77,7 @@ konflux:
         - fribidi
         - gc
         - gcc
+        - gcc-plugin-annobin
         - gd
         - gdb-headless
         - gdk-pixbuf2
