@@ -72,7 +72,12 @@ releases:
             metadata:
               is:
                 el9: microshift-4.22.0~rc.1-202604242016.p0.ge214621.assembly.rc.1.el9
-        images: []
+        images:
+          - distgit_key: microshift-bootc
+            metadata:
+              is:
+                nvr: microshift-bootc-container-v4.22-202604242040.p2.ge214621.assembly.rc.1.el9
+            why: Pin microshift-bootc image to assembly
   rc.0:
     assembly:
       type: candidate
