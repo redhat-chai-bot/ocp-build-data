@@ -2,6 +2,8 @@ arches:
 - x86_64
 - aarch64
 - ppc64le
+# Disabled: Konflux bundle EC verification failing (2026-04-24)
+mode: disabled
 content:
   source:
     dockerfile: Dockerfile.ocp
