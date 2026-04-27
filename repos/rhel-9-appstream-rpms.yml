@@ -19,5 +19,4 @@
   name: rhel-9-appstream-rpms
   reposync:
     enabled: true
-    latest_only: false
   type: external
