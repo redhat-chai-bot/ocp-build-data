@@ -7,15 +7,6 @@ content:
       url: git@github.com:openshift-priv/console.git
       web: https://github.com/openshift/console
     modifications:
-    - action: replace
-      match: "./artifacts/corepack-${COREPACK_VERSION}.tar.gz"
-      replacement: "/cachi2/output/deps/generic/corepack-v${COREPACK_VERSION}.tgz"
-    - action: replace
-      match: "RUN container-entrypoint ./build-frontend.sh"
-      replacement: |
-        WORKDIR frontend
-        RUN node .yarn/releases/yarn-4.12.0.cjs install --immutable && \
-            node .yarn/releases/yarn-4.12.0.cjs build
     - action: command
       command: ["sh", "-c", "echo '\nsupportedArchitectures:\n  os: [\"linux\"]\n  cpu: [\"x64\", \"arm64\", \"s390x\", \"ppc64\"]' >> frontend/.yarnrc.yml"]
     pkg_managers:
