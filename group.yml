@@ -207,6 +207,9 @@ push:
     # - quay.io/openshift-qe-optional-operators
 
 public_upstreams:
+- private: "https://github.com/openshift-priv/os"
+  public:  "https://github.com/redhat-ship-help/os"
+  public_branch: "ship-help/konflux-build-support"
 - private: "https://github.com/openshift-priv/operator-marketplace"
   public:  "https://github.com/operator-framework/operator-marketplace"
 - private: "https://github.com/openshift-priv"
