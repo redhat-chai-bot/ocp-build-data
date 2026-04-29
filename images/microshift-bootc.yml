@@ -41,6 +41,3 @@ name: openshift/microshift-bootc-rhel9
 canonical_builders_from_upstream: false
 owners:
 - microshift-devel@redhat.com
-konflux:
-  sast:
-    enabled: true
