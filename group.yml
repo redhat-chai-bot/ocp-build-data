@@ -121,8 +121,8 @@ rhcos:
   enabled_repos:
   - rhel-9-fast-datapath-rpms
   - rhel-9-server-ose-rpms
-  - rhel-98-baseos
-  - rhel-98-appstream
+  - rhel-9-baseos-rpms
+  - rhel-9-appstream-rpms
   require_consistency:
     driver-toolkit:
     - kernel  # since 9.3, kernel-rt is merged into the kernel package.
