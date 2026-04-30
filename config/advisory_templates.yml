@@ -331,3 +331,16 @@ boilerplates:
       https://docs.openshift.com/container-platform/4.{MINOR}/release_notes/ocp-4-{MINOR}-release-notes.html
 
       Details on how to access this content are available at https://docs.openshift.com/container-platform/4.{MINOR}/updating/updating-cluster-cli.html
+  openshift-logging:
+    synopsis: Logging for Red Hat OpenShift - {PRODUCT_MAJOR}.{PRODUCT_MINOR}.{PRODUCT_PATCH}
+    topic: Logging for Red Hat OpenShift - {PRODUCT_MAJOR}.{PRODUCT_MINOR}.{PRODUCT_PATCH}
+    description: |
+      Red Hat OpenShift Logging {PRODUCT_MAJOR}.{PRODUCT_MINOR}.{PRODUCT_PATCH} is a cluster-wide logging solution for OpenShift that collects and manages applications, infrastructure, and audit logs.
+    solution: |
+      For OpenShift Container Platform {OCP_RELEASE_NOTES_VERSION} see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this errata update:
+
+      https://docs.redhat.com/en/documentation/openshift_container_platform/{OCP_RELEASE_NOTES_VERSION}/html/release_notes/ocp-{OCP_RELEASE_NOTES_VERSION_DASHED}-release-notes
+
+      For Red Hat OpenShift Logging {PRODUCT_MAJOR}.{PRODUCT_MINOR}, see the following instructions to apply this update:
+
+      https://docs.redhat.com/en/documentation/red_hat_openshift_logging/{PRODUCT_MAJOR}.{PRODUCT_MINOR}
