@@ -38,9 +38,11 @@ operator_image_ref_mode: manifest-list
 
 mr_approvers:
   QE:
-    - asdas1
-    - rjohnson
-    - fbladilo
+    - kbharti
+    - rojacob
+  DOCS:
+    - kbharti
+    - rojacob
 
 konflux:
   arches:
