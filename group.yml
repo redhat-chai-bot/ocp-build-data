@@ -26,6 +26,8 @@ OCP_TARGET_VERSIONS: [
   "4.22",
 ]
 
+OCP_RELEASE_NOTES_VERSION: "4.21"
+
 arches:
 - x86_64
 - ppc64le
