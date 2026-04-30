@@ -67,7 +67,16 @@ releases:
           component: rhcos
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: local-storage-operator
+            exclude: true
+            why: "Disabled at assembly basis time (2026-04-27); re-enabled by ocp-build-data#10260 on 2026-04-29"
+          - distgit_key: ptp-operator
+            exclude: true
+            why: "Disabled at assembly basis time (2026-04-27); re-enabled by ocp-build-data#10260 on 2026-04-29"
+          - distgit_key: dpu-operator
+            exclude: true
+            why: "Disabled at assembly basis time (2026-04-27); re-enabled by ocp-build-data#10263 on 2026-04-29"
   rc.1:
     assembly:
       type: candidate
