@@ -47,7 +47,13 @@ releases:
             ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:848b8124b8f2251e2e5834bb88172106996590e969665657ab0549631c10e2e5
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: local-storage-operator
+            exclude: true
+            why: "Bundle EC verification failing: unpinned must-gather image reference"
+          - distgit_key: ptp-operator
+            exclude: true
+            why: "Bundle EC verification failing: unpinned must-gather image reference"
       permits:
         - code: CONFLICTING_INHERITED_DEPENDENCY
           component: rhcos
