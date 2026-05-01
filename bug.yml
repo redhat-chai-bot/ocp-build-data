@@ -10,13 +10,13 @@ bugzilla_config:
   product: "OpenShift Container Platform"
 
 target_release:
-  #  - "5.0.0"
-  #  - "5.0.z"
-  - "5.0"
+  #  - "{MAJOR}.{MINOR}.0"
+  #  - "{MAJOR}.{MINOR}.z"
+  - "{MAJOR}.{MINOR}"
 
 version:
-  - "5.0"
-  - "5.0.z"
+  - "{MAJOR}.{MINOR}"
+  - "{MAJOR}.{MINOR}.z"
 
 # Configure how elliott find-bugs:kernel[-clones] finds and clones kernel bugs (ART-6964)
 kernel_bug_sweep:
