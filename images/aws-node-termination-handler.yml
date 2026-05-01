@@ -15,7 +15,7 @@ distgit:
   component: aws-node-termination-handler-container
 delivery:
   delivery_repo_names:
-  - openshift4/aws-kms-encryption-provider-rhel9
+  - openshift4/aws-node-termination-handler-rhel9
 for_payload: true
 from:
   builder:
