@@ -19,7 +19,7 @@ releases:
           env: stage
           url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/493
         release_date: 2026-Oct-01
-        upgrades: 5.0.0-ec.0
+        upgrades: 5.0.0-ec.0,4.22.0-rc.2,4.22.0-rc.1,4.22.0-rc.0
       rhcos:
         rhel-coreos:
           images:
