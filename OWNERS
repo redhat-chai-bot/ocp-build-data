@@ -11,6 +11,7 @@ reviewers:
 - thiagoalessio
 - vfreex
 - Ximinhan
+- fgallott
 approvers:
 - ashwindasr
 - fbladilo
@@ -24,5 +25,6 @@ approvers:
 - thiagoalessio
 - vfreex
 - Ximinhan
+- fgallott
 # this is to keep automation from complaining about ownership of base image builds
 component: Release
