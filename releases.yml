@@ -65,7 +65,12 @@ releases:
         - code: CONFLICTING_INHERITED_DEPENDENCY
           component: rhcos
       members:
-        rpms: []
+        rpms:
+          - distgit_key: microshift
+            why: Pin microshift to assembly
+            metadata:
+              is:
+                el9: microshift-4.20.20-202605040640.p0.g8c79976.assembly.4.20.20.el9
         images:
           - distgit_key: local-storage-operator
             exclude: true
