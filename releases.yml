@@ -16,13 +16,14 @@ releases:
         shipment!:
           advisories:
             - kind: image
-              live_id: 12118
+              live_id: 13736
             - kind: extras
               live_id: 12119
             - kind: metadata
               live_id: 12120
             - kind: fbc
             - kind: image
+          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/503
         advisories!:
           rpm: 166728
           rhcos: 166729
