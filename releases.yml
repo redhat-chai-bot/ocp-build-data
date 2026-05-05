@@ -17,6 +17,8 @@ releases:
         shipment!:
           advisories:
             - kind: image
+              live_id: 13813
+          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/504
         advisories!:
           rpm: 166757
           rhcos: 166758
