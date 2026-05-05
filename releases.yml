@@ -55,6 +55,9 @@ releases:
             metadata:
               is:
                 nvr: driver-toolkit-container-v4.21.0-202605041749.p2.gf0ae9d1.assembly.stream.el9
+      promotion_permits:
+        - code: BLOCKER_BUGS
+          why: Per ART-18321
       permits:
         - code: CONFLICTING_INHERITED_DEPENDENCY
           component: dpu-intel-ipu-vsp
