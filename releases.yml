@@ -15,16 +15,9 @@ releases:
               why: Pin kernel for CVE-2026-31431
               non_gc_tag: hotfix
         shipment!:
-          advisories:
+          advisories!:
             - kind: image
-              live_id: 10093
-            - kind: extras
-              live_id: 10094
-            - kind: metadata
-              live_id: 10095
-            - kind: fbc
-            - kind: image
-          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/479
+          url!: ""
         advisories!:
           rpm: 166720
           rhcos: 166721
