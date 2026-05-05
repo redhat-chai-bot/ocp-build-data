@@ -15,9 +15,9 @@ releases:
               why: Pin kernel for CVE-2026-31431
               non_gc_tag: hotfix
         shipment!:
-          advisories!:
+          advisories:
             - kind: image
-          url!: ""
+          url: ""
         advisories!:
           rpm: 166720
           rhcos: 166721
