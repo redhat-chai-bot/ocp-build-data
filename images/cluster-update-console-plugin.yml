@@ -21,7 +21,7 @@ delivery:
   # Maps to honeybadger repo_name
   repo_name: ose-cluster-update-console-plugin
   delivery_repo_names:
-  - openshift5/ose-cluster-update-console-plugin-rhel9
+  - openshift4/ose-cluster-update-console-plugin-rhel9
 enabled_repos:
 - rhel-9-baseos-rpms
 - rhel-9-appstream-rpms
