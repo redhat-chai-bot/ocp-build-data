@@ -1,4 +1,50 @@
 releases:
+  4.19.30:
+    assembly:
+      type: standard
+      basis:
+        assembly: 4.19.29
+        reference_releases!: {}
+      group:
+        advisories:
+          rpm: -1
+          rhcos: -1
+        shipment:
+          advisories:
+            - kind: image
+        release_date: 2026-May-07
+        dependencies:
+          rpms:
+            - el9: kernel-5.14.0-570.112.1.el9_6
+              why: Pin kernel for CVE-2026-31431
+              non_gc_tag: hotfix
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:eace79699c52dd23bb470f1dc50bb30a7b21b94eb056172aebbc796f31491af9
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b8574149e44f11230eb8a7902c6c674be4654b9b5083675927b3fad92579c02f
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:666235bd9246ea6dc54fabfbe15a907ac08a7bd9f79546068889253d18b60a70
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:1c0e4fadbc279765da7f9ae7af1ba858f880dc1a4c49bffcbbad715720a94b18
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e87abb2d99606c699325a3f22dbce3b3d95ec5b073faee12beec67f5027f1e00
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:bbfe9b1712f412d60b69b5d5f8083eae8e003456d9cb06f763c26629ba79f72e
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:81cca64c4d6ce4ce82414d9d5d5847f304368b214b98b3331cdbb0f80d5153ae
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b0f700a8c46dc8871f2b0f49019efa057581348bb7685d50f25076927c2fa252
+      members:
+        rpms: []
+        images:
+          - distgit_key: driver-toolkit
+            why: Pin DTK to match RHCOS kernel 5.14.0-570.112.1.el9_6 for CVE-2026-31431
+            metadata:
+              is:
+                nvr: driver-toolkit-container-v4.19.0-202605042333.p2.g686fdac.assembly.stream.el9
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-rhcos-downloader
+      issues:
+        include:
+          - id: OCPBUGS-84782
   4.19.29:
     assembly:
       type: standard
