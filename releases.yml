@@ -1832,6 +1832,13 @@ releases:
         - code: MISMATCHED_SIBLINGS
           component: '*'
       members:
+        rpms:
+          - distgit_key: openshift
+            why: Pin openshift RPM
+            metadata:
+              is:
+                el8: openshift-4.20.0-202604152252.p2.g2d92ab7.assembly.stream.el8
+                el9: openshift-4.20.0-202604152252.p2.g2d92ab7.assembly.stream.el9
         images:
           - distgit_key: '*'
             why: Exclude rpm updates that should not cause mass rebuilds
