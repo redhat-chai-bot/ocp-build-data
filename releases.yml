@@ -1,4 +1,55 @@
 releases:
+  4.20.21:
+    assembly:
+      type: standard
+      basis:
+        assembly: 4.20.20
+        reference_releases!: {}
+      group:
+        advisories!:
+          rpm: -1
+          rhcos: -1
+        shipment!:
+          advisories:
+            - kind: image
+        release_date: 2026-May-07
+        release_jira: ART-0
+        upgrades: 4.19.15,4.19.16,4.19.17,4.19.18,4.19.19,4.19.20,4.19.21,4.19.22,4.19.23,4.19.24,4.19.25,4.19.26,4.19.27,4.19.28,4.19.29,4.19.30,4.20.0,4.20.1,4.20.2,4.20.3,4.20.4,4.20.5,4.20.6,4.20.8,4.20.9,4.20.10,4.20.11,4.20.12,4.20.13,4.20.14,4.20.15,4.20.16,4.20.17,4.20.18,4.20.19,4.20.20
+        dependencies:
+          rpms:
+            - el9: kernel-5.14.0-570.112.1.el9_6
+              why: Pin kernel for CVE-2026-31431
+              non_gc_tag: hotfix
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e9cfa1b1222a1cb8d46408586045e4657961543c38aacf596b7df5c0099e2706
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:04a72178713d6a86a641e9ad668fbcdd88bd88265ee728571eedf012cb92f04e
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:76745616f8000f7c5932a1ff55b6b2f1be17ad66e4f9fa920a4ce674b8b481b1
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:f7c6d69ecb444a0c7b5b3fcd97e00f5e587599d2e3db06cc5bfc54208e9a193d
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:9d88c42a32524661567c2429a5f6774c895712acfda5a90c5e65e2267bc1b08c
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:9d8977bae77da1d79435ccfc342c7062996c7e670235c12e178b5500072fcee3
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:73726d7a984923da2749d536dd863d376319c8db50e711c601804decd2a713aa
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:884ff816c4bb2de4eefca0265a95605911f4ef4608c9b689c039195abf332a7b
+      members:
+        images:
+          - distgit_key: driver-toolkit
+            why: Pin DTK to match RHCOS kernel 5.14.0-570.112.1.el9_6 for CVE-2026-31431
+            metadata:
+              is:
+                nvr: driver-toolkit-container-v4.20.0-202605041819.p2.g62e1f60.assembly.stream.el9
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: dpu-intel-ipu-vsp
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-rhcos-downloader
+      issues:
+        include:
+          - id: OCPBUGS-84792
   4.20.20:
     assembly:
       type: standard
