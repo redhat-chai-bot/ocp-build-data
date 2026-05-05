@@ -19,6 +19,8 @@ vars:
   MAJOR: 4
   MINOR: 21
 
+  FBC_DISABLE_CHANNEL_SKIPS: true
+
 OCP_TARGET_VERSIONS: [
   "4.19",
   "4.20",
