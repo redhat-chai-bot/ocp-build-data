@@ -22,6 +22,9 @@ releases:
         advisories!:
           rpm: 166757
           rhcos: 166758
+      promotion_permits:
+        - code: BLOCKER_BUGS
+          why: Per ART-18321
       rhcos:
         rhel-coreos:
           images:
