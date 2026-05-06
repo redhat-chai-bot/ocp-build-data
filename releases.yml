@@ -20,6 +20,19 @@ releases:
             - el9: kernel-5.14.0-284.169.1.el9_2
               why: Pin kernel for CVE-2026-31431
               non_gc_tag: hotfix
+      permits:
+        - code: MISMATCHED_NETWORK_MODE
+          component: openshift-enterprise-console
+        - code: MISMATCHED_NETWORK_MODE
+          component: openshift-enterprise-haproxy-router
+        - code: MISMATCHED_NETWORK_MODE
+          component: openshift-enterprise-hyperkube
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-rhcos-downloader
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: cluster-node-tuning-operator
+        - code: CONFLICTING_GROUP_RPM_INSTALLED
+          component: rhcos
       rhcos:
         machine-os-content:
           images:
