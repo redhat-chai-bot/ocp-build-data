@@ -186,8 +186,8 @@ default_rpm_build_profile: default
 rpm_deliveries:
   - packages:
       - kernel
-    rhel_tag: rhel-9.8.0-candidate
-    integration_tag: rhel-9.8.0-pending
+    rhel_tag: rhel-{RHCOS_EL_MAJOR}.{RHCOS_EL_MINOR}.0-z-candidate
+    integration_tag: early-kernel-candidate
     stop_ship_tag: early-kernel-stop-ship
     ship_ok_tag: early-kernel-ship-ok
     target_tag: rhaos-{MAJOR}.{MINOR}-rhel-{RHCOS_EL_MAJOR}-candidate
