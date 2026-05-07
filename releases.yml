@@ -67,7 +67,10 @@ releases:
           component: rhcos
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: dpu-operator
+            exclude: true
+            why: "dpu-marvell-cp-agent operand fails to build"
   rc.2:
     assembly:
       type: candidate
