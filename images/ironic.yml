@@ -135,7 +135,6 @@ konflux:
       - libkcapi
       - libkcapi-hmaccalc
       - libmpc
-      - libpciaccess
       - libnsl2
       - libpciaccess
       - libpkgconf
