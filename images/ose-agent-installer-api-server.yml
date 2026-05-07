@@ -50,8 +50,11 @@ konflux:
       - gcc-plugin-annobin
       - libstdc++-devel
       - glibc
-      - glibc-headers
+      - glibc-common
+      - glibc-gconv-extra
       - glibc-devel
+      - glibc-headers
+      - glibc-minimal-langpack
       - kernel-headers
       - libasan
       - libatomic
@@ -61,6 +64,9 @@ konflux:
       - libxcrypt-devel
       - make
       - nmstate-devel
+      - nmstate-libs
+      - perl-Git
+      - postgresql-server
 okd:
   enabled_repos:
   - rhel-9-appstream-rpms
