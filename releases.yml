@@ -76,6 +76,11 @@ releases:
           - distgit_key: dpu-operator
             exclude: true
             why: "dpu-marvell-cp-agent operand fails to build"
+          - distgit_key: microshift-bootc
+            metadata:
+              is:
+                nvr: microshift-bootc-container-v4.22-202605071704.p2.g40a804d.assembly.rc.3.el9
+            why: Pin microshift-bootc image to assembly
   rc.2:
     assembly:
       type: candidate
