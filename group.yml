@@ -1,7 +1,7 @@
 name: oadp-1.5
 csv_namespace: oadp
 product: oadp
-version: 1.5.6
+version: 1.5.7
 
 vars:
   # The go versions used by the various CI builder images.
