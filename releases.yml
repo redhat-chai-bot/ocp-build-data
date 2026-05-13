@@ -1,4 +1,40 @@
 releases:
+  4.20.23:
+    assembly:
+      type: standard
+      basis:
+        time: "2026-05-13T04:11:29+00:00"
+        reference_releases:
+          x86_64: 4.20.0-0.nightly-2026-05-13-064706
+      group:
+        advisories:
+          rpm: -1
+          rhcos: -1
+        release_jira: ART-0
+        shipment:
+          advisories:
+            - kind: image
+            - kind: extras
+            - kind: metadata
+            - kind: fbc
+        release_date: 2026-May-20
+        upgrades: 4.19.15,4.19.16,4.19.17,4.19.18,4.19.19,4.19.20,4.19.21,4.19.22,4.19.23,4.19.24,4.19.25,4.19.26,4.19.27,4.19.28,4.19.29,4.19.30,4.19.31,4.20.0,4.20.1,4.20.2,4.20.3,4.20.4,4.20.5,4.20.6,4.20.8,4.20.9,4.20.10,4.20.11,4.20.12,4.20.13,4.20.14,4.20.15,4.20.16,4.20.17,4.20.18,4.20.19,4.20.20,4.20.21,4.20.22
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:c34fb435109a1b8ce681a06e77c3d5c0fdf547c58d096da5fe13b0d1db9a195d
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:03615816eaecabe6c87933ec4e9e2e4eac095955070ef64c4f48de7c2f4ee086
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:29151c50e3956415f9811988d5c96df9e529c80ae101604af51565c05fd0a19b
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:810066306c74810b60dbad9a19c118a7c454bf788e4c1959bb355754c93d54d9
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:ddeba23eb37fefb91b538b13632008bc5e8f47924249675a07fcfe5e080082dd
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:bbffa26e2d921a33394198e5413ff08a7b94fbf82fae9ba1e7ad4d6610db21dc
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:19c570ee8c5f14f6e5e8ecec8c3067f792dedda948130a24cc04c04952c5cc40
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:08a2815b27732219c1a4081e7c44147efb0b90ed1ec3761597c80c7b1d869d79
+      members:
+        rpms: []
+        images: []
   4.20.22:
     assembly:
       type: standard
