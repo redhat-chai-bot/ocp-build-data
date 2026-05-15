@@ -1,4 +1,74 @@
 releases:
+  rc.4:
+    assembly:
+      type: candidate
+      basis:
+        time: "2026-05-13T14:00:00+00:00"
+        reference_releases:
+          x86_64: 4.22.0-0.nightly-2026-05-13-154759
+      group:
+        advisories:
+          rpm: 164955
+          rhcos: 164956
+          microshift: 159142
+        release_jira: ART-14438
+        shipment:
+          advisories:
+            - kind: image
+              live_id: 449
+            - kind: extras
+              live_id: 450
+            - kind: metadata
+              live_id: 451
+            - kind: fbc
+          env: stage
+        release_date: 2026-May-25
+        upgrades: 4.21.6,4.21.7,4.21.8,4.21.9,4.21.10,4.21.11,4.21.12,4.21.13,4.21.14,4.21.15,4.21.17,4.22.0-ec.0,4.22.0-ec.1,4.22.0-ec.2,4.22.0-ec.3,4.22.0-ec.4,4.22.0-ec.5,4.22.0-rc.0,4.22.0-rc.1,4.22.0-rc.2,4.22.0-rc.3
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:12fe2202763c6dff3ac5af5c7ff3f54ac8571e2b8620ef8772709fa9493c842e
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:c5cc21934c805f29fa17e846762acafdfc7c299e96d61ef25544d1d059933656
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e45cdd1fb3ed4e6eb48e6f19237934b488c8e06dde142877e12ad46de8639926
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:7cc9ccfbacc1cc82069ebcf8bb3462425acf4e8e2117bd8185771ac53a0d376d
+        rhel-coreos-10:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:b19add9412b2021c985d6c96bf7f22e6212d692573c1efec345d069fb20da69a
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d7a10cdb17e0605120c504890c762d2bb567a9bae9586d3b491b1c43b4378b2f
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:4e2088cce7e83dcef1ab4c644644fc6e98fc5eea5f68d7b504b06d94aae3c7e0
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e0ad38e9b8ed4b99dcc8c5ae831a5a85e1654fc179d419a9b86444148c409d20
+        rhel-coreos-10-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:3fae4a9a43460f8414b0779a2faa98ae08facfa8ea7b1b849d7c6c45ae982965
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:cd08d57d3e662a6ba270cf3429fcde7488622ea944065ad237ee02f482a8be82
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:1b2731b3ef4ae90718741391413217c9028f9579be304b92ebd22519c38d5a47
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:31b9cf2a60b9d43e749bb956c52afdfc92a61c4e02b25891dc5bf8018222acb7
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:29e41d8376702a0377daa4f970f78ebdaa1271a86bb99c3690325d2a8b246da4
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:f4a86a5e8419442f86aacc2920c2b7497c9b5064e8a5fadb0e5c6ae2b9d76b32
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:a30a2d6b35f0bfa36b0c9ed8f742986e204e7b4aac6cfe12495027e396bf95a3
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:66d7dfd487d59f06b4a534b45c5e1b34660792717fe46a3274d9665dc96e64d6
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-rhcos-downloader
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-builder
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-keepalived-ipfailover
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-api-server
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-node-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-frr
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-machine-config-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: rhcos
+      members:
+        rpms: []
+        images: []
   rc.3:
     assembly:
       type: candidate
