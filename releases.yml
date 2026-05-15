@@ -49,6 +49,21 @@ releases:
             aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:f4a86a5e8419442f86aacc2920c2b7497c9b5064e8a5fadb0e5c6ae2b9d76b32
             s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:a30a2d6b35f0bfa36b0c9ed8f742986e204e7b4aac6cfe12495027e396bf95a3
             ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:66d7dfd487d59f06b4a534b45c5e1b34660792717fe46a3274d9665dc96e64d6
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-builder
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-keepalived-ipfailover
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-api-server
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-node-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-frr
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-machine-config-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: rhcos
       members:
         rpms: []
         images: []
