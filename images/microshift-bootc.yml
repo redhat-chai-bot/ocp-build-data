@@ -23,6 +23,8 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/microshift.git
       web: https://github.com/openshift/microshift
+    pkg_managers:
+    - gomod
     ci_alignment:
       streams_prs:
         enabled: false
