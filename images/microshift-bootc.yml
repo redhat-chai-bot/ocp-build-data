@@ -42,7 +42,7 @@ enabled_repos:
 konflux:
   cachi2:
     lockfile:
-      force: false
+      enabled: false
 name: openshift/microshift-bootc-rhel9
 owners:
 - microshift-devel@redhat.com
