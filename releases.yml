@@ -87,7 +87,12 @@ releases:
           - id: OCPBUGS-82076
             # why: Bug looks like CVE tracker but is missing required metadata. We don't ship this image.
       members:
-        rpms: []
+        rpms:
+          - distgit_key: microshift
+            why: Pin microshift to assembly
+            metadata:
+              is:
+                el9: microshift-4.21.16-202605180617.p0.g919341c.assembly.4.21.16.el9
         images: []
   4.21.15:
     assembly:
