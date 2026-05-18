@@ -10,6 +10,7 @@ releases:
         advisories:
           rpm: 167214
           rhcos: 167215
+          microshift: 167335
         release_jira: ART-18763
         shipment:
           advisories:
