@@ -24,6 +24,8 @@ releases:
           url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/533
         release_date: 2026-May-19
         upgrades: 4.20.15,4.20.16,4.20.17,4.20.18,4.20.19,4.20.20,4.20.21,4.20.22,4.20.23,4.21.0,4.21.1,4.21.2,4.21.3,4.21.4,4.21.5,4.21.6,4.21.7,4.21.8,4.21.9,4.21.10,4.21.11,4.21.12,4.21.13,4.21.14,4.21.15
+        microshift_bootc_shipment:
+          url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/537
       rhcos:
         rhel-coreos:
           images:
