@@ -1,5 +1,4 @@
-# Disabled until go 1.25.8
-mode: disabled
+mode: enabled
 cachito:
   packages:
     gomod:
