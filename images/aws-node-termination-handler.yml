@@ -1,7 +1,3 @@
-# TODO: Re-enable after 5.0-ec.1 is promoted. Disabled because gen-assembly
-# cannot find a build for this component at the ec.1 basis event — the image
-# was added after the nightly (5.0.0-0.nightly-2026-04-26-064718) was created.
-mode: disabled
 content:
   source:
     dockerfile: Dockerfile.ocp
