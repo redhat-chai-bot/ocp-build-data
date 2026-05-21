@@ -2,7 +2,12 @@
 rhel-9-golang:
   aliases:
     - rhel-9-golang-{GO_LATEST}
-  image: registry.redhat.io/ubi9/go-toolset:1.24
+  # Pinned to RHEL 9.6-based go-toolset 1.24.4 (9.6-1755074415) to avoid
+  # crypto-policies/openssh RPM conflict with RHEL 9.6 EUS repos.
+  # The floating :1.24 tag advanced to RHEL 9.7+ which ships crypto-policies
+  # that conflict with openssh < 9.9p1-4.el9, but our 9.6 EUS repos only
+  # provide openssh-8.7p1.
+  image: registry.redhat.io/ubi9/go-toolset@sha256:81d9cb51feb0b56e3d87a73c2237bebaa80b28e4d5791c1da1140eae50225e2f
 
 rhel-9-nodejs-18:
   image: registry.redhat.io/ubi9/nodejs-18:latest
