@@ -77,7 +77,10 @@ releases:
           component: rhcos
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: ose-aws-efs-csi-driver-operator
+            exclude: true
+            why: Bundle references multiple operand NVRs that are not included in the release.
   4.21.16:
     assembly:
       type: standard
