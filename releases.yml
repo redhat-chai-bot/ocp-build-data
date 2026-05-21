@@ -75,9 +75,16 @@ releases:
           component: ose-tools
         - code: CONFLICTING_INHERITED_DEPENDENCY
           component: rhcos
+      issues:
+        exclude:
+          - id: OCPBUGS-82076
+            # why: Bug looks like CVE tracker but is missing required metadata. We don't ship this image.
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: ose-aws-efs-csi-driver-operator
+            exclude: true
+            why: Bundle references multiple operand NVRs that are not included in the release.
   4.21.16:
     assembly:
       type: standard
