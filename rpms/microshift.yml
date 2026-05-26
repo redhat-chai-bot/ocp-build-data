@@ -19,11 +19,11 @@ content:
         RELEASE_NAME: "{release_name}"
 name: microshift
 distgit:
-  branch: rhaos-{MAJOR}.{MINOR}-rhel-9
+  branch: rhaos-{MAJOR}.{MINOR}-rhel-10
 targets:
-- rhaos-{MAJOR}.{MINOR}-rhel-9-candidate
+- rhaos-{MAJOR}.{MINOR}-rhel-10-candidate
 owners:
 - microshift-devel@redhat.com
 # This is used by microshift_sync job
 rhel_targets:
-- 9
+- 10
