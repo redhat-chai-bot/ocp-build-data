@@ -82,7 +82,12 @@ releases:
         - code: CONFLICTING_INHERITED_DEPENDENCY
           component: rhcos
       members:
-        rpms: []
+        rpms:
+          - distgit_key: microshift
+            why: Pin microshift to assembly
+            metadata:
+              is:
+                el9: microshift-4.22.0~rc.5-202605271558.p0.g853f977.assembly.rc.5.el9
         images:
           - distgit_key: dpu-operator
             why: "Pin to build where previously failing member builds now succeed"
