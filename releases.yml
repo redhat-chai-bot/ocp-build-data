@@ -1,4 +1,88 @@
 releases:
+  rc.5:
+    assembly:
+      type: candidate
+      basis:
+        time: "2026-05-23T13:39:41+00:00"
+        reference_releases:
+          x86_64: 4.22.0-0.nightly-2026-05-25-200009
+      group:
+        advisories:
+          rpm: 164955
+          rhcos: 164956
+          microshift: 159142
+        release_jira: ART-14438
+        shipment:
+          advisories:
+            - kind: image
+              live_id: 449
+            - kind: extras
+              live_id: 450
+            - kind: metadata
+              live_id: 451
+            - kind: fbc
+          env: stage
+        release_date: 2026-Jun-09
+        upgrades: 4.21.6,4.21.7,4.21.8,4.21.9,4.21.10,4.21.11,4.21.12,4.21.13,4.21.14,4.21.15,4.21.16,4.21.17,4.21.18,4.21.19,4.22.0-ec.0,4.22.0-ec.1,4.22.0-ec.2,4.22.0-ec.3,4.22.0-ec.4,4.22.0-ec.5,4.22.0-rc.0,4.22.0-rc.1,4.22.0-rc.2,4.22.0-rc.3,4.22.0-rc.4
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:6599ea587737de2929740f76233b300f85e9b039dbc4665c88a240a2483ee3e8
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:62a5f6db9152fd15aee5f2bd47d680539c377349495bd427c7bc65cf889b9ca6
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:ce215d9efa50c33e62336a60c1b440a37297201141a9be03cfdd69a811663749
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:ab7563ee2a143c1ce8e29b6be26639d3917549b81862b5a53690b3afb34273ae
+        rhel-coreos-10:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:caf1d88fb6160df369ab2e863cf1624bc966517ca71f739fd9733d741fdf7f57
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:1716d4db8242e97d379dc8af444c50865a9bccdd039971fa9c9f153ee20db1da
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:243da10e43af77bbc61e9361af4295c741dc42f7dabd524d37087bb07f306047
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:5afe06dab3e3db60c358ba0d9fe4d40203bb1ee71879ae531f8fc7bf65ad80c2
+        rhel-coreos-10-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:99be0e1fa70cd66aea616dca1007fc004996528682c2dbc438b6c2fbe44c67b4
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:91a28bc9eb765bd0f92b70e02a28d478f5289859cd6db718ba94a32d28f6577c
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:1ea61cddab903cf42bd208abbe9e123c8b8d3466f3fb03ec4692e4929399dade
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:8c2f6609f34f9fb88447a27601b790baceee2bf96f5ada17e8ec3d995bfe213c
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d1ffa6cc20e3d64dbf036c93efa5d0334c9392d5d8dc5ea7fa871f8d5b2c1cc7
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:81a873f95f42568e3dfd408ca8dc3769657e9d3d80a7f1e0157eb2c731d0021e
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:2137fcb32045ac0b541100d90916cbc89276dd41c7170a820b731cffe0d90d0b
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:c9131e7a3ba05967b3c3dc3aa73612abf7fefa42594c29a5f779ec4308abffac
+      permits:
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: cluster-node-tuning-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: dpu-intel-ipu-p4sdk
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: dpu-intel-ipu-vsp
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ironic-rhcos-downloader
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-ansible-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-builder
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: openshift-enterprise-tests
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-api-server
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-agent-installer-node-agent
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-frr
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-machine-config-operator
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-network-tools
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: ose-tools
+        - code: CONFLICTING_INHERITED_DEPENDENCY
+          component: rhcos
+      members:
+        rpms: []
+        images: []
   rc.4:
     assembly:
       type: candidate
