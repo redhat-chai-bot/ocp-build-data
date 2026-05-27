@@ -649,3 +649,4 @@ external_scanners:
       # these are pinned in node base image
       - nodejs*
       - npm
+
