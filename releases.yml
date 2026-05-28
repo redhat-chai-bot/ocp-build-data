@@ -129,6 +129,11 @@ releases:
             metadata:
               is:
                 nvr: dpu-network-resources-injector-container-v4.22.0-202605260814.p2.gb2a79d5.assembly.stream.el9
+          - distgit_key: microshift-bootc
+            metadata:
+              is:
+                nvr: microshift-bootc-container-v4.22-202605280805.p2.g853f977.assembly.rc.5.el9
+            why: Pin microshift-bootc image to assembly
   rc.4:
     assembly:
       type: candidate
