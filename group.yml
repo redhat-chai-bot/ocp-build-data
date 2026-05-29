@@ -1,4 +1,4 @@
-name: rhel-8-golang-1.19
+name: rhel-8-golang-1.20
 
 arches:
 - x86_64
@@ -8,7 +8,7 @@ arches:
 
 vars:
   MAJOR: 4
-  MINOR: 13
+  MINOR: 15
 
 konflux:
   network_mode: hermetic
@@ -21,10 +21,10 @@ urls:
   brewhub: https://brewhub.engineering.redhat.com/brewhub
   brew_image_host: registry-proxy.engineering.redhat.com
   brew_image_namespace: rh-osbs
-  cgit: http://pkgs.devel.redhat.com/cgit
+  cgit: https://pkgs.devel.redhat.com/cgit
 
 insecure_source: true
-default_image_build_method: osbs2
+
 branch: rhaos-{MAJOR}.{MINOR}-rhel-8
 
 # To prevent from being garbage collected, builds should be tagged with a -hotfix tag.
