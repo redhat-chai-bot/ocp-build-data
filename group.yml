@@ -1,4 +1,4 @@
-name: rhel-9-golang-1.22
+name: rhel-9-golang-1.24
 
 arches:
 - x86_64
@@ -8,7 +8,7 @@ arches:
 
 vars:
   MAJOR: 4
-  MINOR: 18
+  MINOR: 21
 
 konflux:
   network_mode: hermetic
