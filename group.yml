@@ -11,6 +11,7 @@ vars:
   MINOR: 13
 
 konflux:
+  network_mode: hermetic
   cachi2:
     enabled: true
 
