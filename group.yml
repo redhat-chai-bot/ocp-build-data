@@ -15,6 +15,7 @@ konflux:
   cachi2:
     enabled: true
     lockfile:
+      backend: rpm-lockfile-prototype
       force: true
 
 urls:
